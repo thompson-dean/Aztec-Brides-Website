@@ -1,44 +1,99 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1" 
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+            body {
+                background: linear-gradient(
+                    to bottom,
+                    rgba(0, 0, 0, 1),
+                    rgba(0, 0, 0, 0.9)
+                );
+                color: white;
+                text-align: center;
+            }
+
+            a {
+                color: lightskyblue;
+                font-size: medium;
+            }
+        </style>
+        <script>
+            function changeLanguage() {
+                var lang = document.getElementById("lang").innerHTML;
+                var btn = document.getElementById("langButton").innerHTML;
+                if (
+                    lang ==
+                    "東京を中心に活躍している多国籍なプロググランジバンド！"
+                ) {
+                    document.getElementById("description").innerHTML =
+                        "A multinational prog-grunge band active in Tokyo!";
+                    document.getElementById("liveSchedule").innerHTML = "";
+                    document.getElementById("lang").innerHTML = "";
+                    document.getElementById("lang").innerHTML = "";
+                    document.getElementById("lang").innerHTML = "";
+                    document.getElementById("lang").innerHTML = "";
+                    document.getElementById("lang").innerHTML = "";
+                    document.getElementById("lang").innerHTML = "";
+                    document.getElementById("lang").innerHTML = "";
+                    document.getElementById("langButton").innerHTML = "日本語";
+                } else {
+                    document.getElementById("lang").innerHTML =
+                        "東京を中心に活躍している多国籍なプロググランジバンド！";
+                        document.getElementById("lang").innerHTML = "";
+                    document.getElementById("lang").innerHTML = "";
+                    document.getElementById("lang").innerHTML = "";
+                    document.getElementById("lang").innerHTML = "";
+                    document.getElementById("lang").innerHTML = "";
+                    document.getElementById("lang").innerHTML = "";
+                    document.getElementById("lang").innerHTML = "";
+                    document.getElementById("lang").innerHTML = "";
+                    document.getElementById("langButton").innerHTML = "English";
+                }
+            }
+        </script>
     </head>
-    <body bgcolor="black">
-        <center>
-            <font color="white"
-                <h1>AZTEC BRIDES</h1>
-                <h2>東京を中心に活躍している多国籍なプロググランジバンド！</h2>
-                <img src="AZB_no_background-removebg-preview.png">
-                <h2>ライブ予定</h2>
-                <p>7/9 ズンチャカフェス　Zunchaka Festival</p>
-                <p>Shibuya Hachiko Statue Stage - ハチ公前広場 1230-1245</p>
-                <h6>
-                    <a href="https://shibuya-zunchaka.com/"> Details 詳細</a>
-                </h6>
-                <h2>音楽は</h2>
-                <a href="https://share.amuse.io/album/aztec-brides-aztec-brides"
-                target="_blank">コチラ</a><br>
-                <h2>写真は</h2>
-                <a href="AZB images.html"
-                target="_blank">コチラ</a><br>
-                <h2>外部リンク</h2>
-                <a href="https://www.instagram.com/aztec.brides/"
-                target="_blank">Instagram</a><br>
-                <a href="https://aztecbrides.bandcamp.com/album/aztec-brides-demo-ep"
-                target="_blank">Bandcamp</a><br>
-                <a href="https://www.youtube.com/@aztec.brides"
-                target="_blank">YouTube</a><br>
-                <h2>コンタクト</h2>
-                <a href = "mailto: aztecbridesmanagement@gmail.com">aztecbridesmanagement@gmail.com</a>
-               
-                
-                <h6>©Aztec Brides 2023</h6>
-            </font>
-        </center>
+    <body>
+        <h1>AZTEC BRIDES</h1>
+        <h2 id="description">
+            東京を中心に活躍している多国籍なプロググランジバンド！
+        </h2>
+        <img src="AZB_no_background-removebg-preview.png" />
+        <h2>ライブ予定</h2>
+        <p>7/9 ズンチャカフェス　Zunchaka Festival</p>
+        <p>Shibuya Hachiko Statue Stage - ハチ公前広場 1230-1245</p>
+        <h6>
+            <a href="https://shibuya-zunchaka.com/"> Details 詳細</a>
+        </h6>
+        <h2>音楽は</h2>
+        <a
+            href="https://share.amuse.io/album/aztec-brides-aztec-brides"
+            target="_blank"
+            >コチラ</a
+        ><br />
+        <h2>写真は</h2>
+        <a href="AZB images.html" target="_blank">コチラ</a><br />
+        <h2>外部リンク</h2>
+        <a href="https://www.instagram.com/aztec.brides/" target="_blank"
+            >Instagram</a
+        ><br />
+        <a
+            href="https://aztecbrides.bandcamp.com/album/aztec-brides-demo-ep"
+            target="_blank"
+            >Bandcamp</a
+        ><br />
+        <a href="https://www.youtube.com/@aztec.brides" target="_blank"
+            >YouTube</a
+        ><br />
+        <h2>コンタクト</h2>
+        <a href="mailto: aztecbridesmanagement@gmail.com"
+            >aztecbridesmanagement@gmail.com</a
+        >
+        <br />
+
+        <button id="langButton" onclick="changeLanguage()">English</button>
+        <br />
+        <h6>©Aztec Brides 2023</h6>
     </body>
 </html>
-
-
-
-
