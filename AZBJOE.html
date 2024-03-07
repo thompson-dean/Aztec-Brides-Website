@@ -13,42 +13,60 @@
       color: #ffffff;
     }
 
-    .profile-container {
-      display: flex;
-      align-items: center;
-      min-height: 100vh;
-    }
-
-    .profile {
-      display: flex;
-      max-width: 800px;
-      margin: 0;
-    }
-
-    .profile img {
-      padding: 0px;
+    #JOEIMAGE1 {
+      position: absolute;
+      left: 10px;
+      top: 10px;
       width: 75vw;
+      height: auto;
+      min-width: 100px;
+      min-height:auto;
+      max-width: 2000px;
+      max-height: auto;
+      
+    }
+
+
+    .profile-content {
+      position: absolute;
+      margin-top: -3vh;
+      margin-left: 77vw;
+      width: 20vw;
       justify-content: left;
     }
 
+    @media screen and (max-width: 500px) {
     .profile-content {
-      flex: 1;
-      padding: 20px;
-      text-align: left;
+        position:absolute;
+        width: 75%; 
+        left:-75.5vw;
+        top: 270px;
+    }
+    .p {
+      margin-top: 10px;
+    }
     }
 
     h1 {
       font-family:'Bebas Neue';
       color: #FFDE59;
-      margin-bottom: 20px;
       text-align:left;
+      font-size: 6vw;
     }
 
     p {
-      width: 20vw; 
-      margin: 0 auto;
-      font-size: 18px;
+      position: absolute;
+      text-align: justify;
+      margin-top: -20px;
+      white-space: wrap;
+      font-size: 1.5vw;
       margin-bottom: 20px;
+      font-family: 'American Typewriter';
+      font-weight: 100;
+      font-style: normal;
+      font-size: 1.5vw;
+      line-height: 1.2;
+      white-space: wrap;
     }
 
     .back-button {
@@ -149,21 +167,18 @@
 </head>
 <body>
 
-<div class="profile-container">
-  <div class="profile">
-    <img src="Images/JOE1.jpg" alt="Band Member Image">
-    <div class="profile-content">
+<img id=JOEIMAGE1 src="Images/JOE1.jpg" alt="Band Member Image">
+
+<div class="profile-content">
       <h1>JOE FRY</h1>
-      <p>Introducing Joe Fry, the smooth heartbeat of Aztec Brides and their masterful bass player, delectably accompanying Beto's hypnotizing guitar riffs. His musical prowess extends beyond the stage, contributing to the band's collaborative songwriting process. With a deep passion for groove and a soulful connection to the instrument, Joe Fry brings a vibrant energy that defines Aztec Brides' unique musical identity.</p>
-    </div>
+      <p>Papa Joe is originally from London and has been playing on the Tokyo music scene since 2014. Joe is part human and part mega-biodiverse mushroom seed bank, and enjoys marathon running, alliteration and liminal spaces. If you think his bass playing sucks, just wait til you hear his drumming. Stay toxic.</p>
   </div>
-  <a href="#" class="back-button" onclick="goBack()">GO BACK</a>
+  </div>
+  <a href="AZBHOME.html" class="back-button">GO BACK</a>
 </div>
 
 <script>
-  function goBack() {
-    window.history.back();
-  }
+  
 </script>
 
 </body>

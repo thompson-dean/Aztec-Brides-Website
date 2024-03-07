@@ -20,12 +20,20 @@
       overflow: hidden;
       cursor: pointer;
       transition: transform 0.3s ease;
+      width: 50%;
+      max-width: 500px;
     }
 
     #image-button img {
       width: 100%;
       height: auto;
       display: block;
+    }
+
+    @media screen and (min-width: 1200px) {
+      #image-button img {
+        max-width: 500px;
+      }
     }
 
     #image-button:hover {

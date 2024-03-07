@@ -13,39 +13,60 @@
       color: #ffffff;
     }
 
-    .profile-container {
-      display: flex;
-      align-items: center;
-      min-height: 100vh;
-    }
-
-    .profile {
-      display: flex;
-      max-width: 800px;
-      margin: 0;
-    }
-
-    .profile img {
-      padding: 0px;
+    #YURIIMAGE1 {
+      position: absolute;
+      left: 10px;
+      top: 10px;
       width: 75vw;
+      height: auto;
+      min-width: 100px;
+      min-height:auto;
+      max-width: 2000px;
+      max-height: auto;
+      
+    }
+
+
+    .profile-content {
+      position: absolute;
+      margin-top: -3vh;
+      margin-left: 77.5vw;
+      width: 20vw;
       justify-content: left;
     }
 
+    @media screen and (max-width: 500px) {
     .profile-content {
-      flex: 1;
-      padding: 20px;
-      text-align: left;
+        position:absolute;
+        width: 75%; 
+        left:-75.5vw;
+        top: 270px;
+    }
+    .p {
+      margin-top: 10px;
+    }
     }
 
     h1 {
       font-family:'Bebas Neue';
       color: #FFDE59;
-      margin-bottom: 20px;
+      text-align:left;
+      font-size: 6vw;
     }
 
     p {
-      font-size: 18px;
+      position: absolute;
+      text-align: justify;
+      margin-top: -20px;
+      white-space: wrap;
+      font-size: 1.5vw;
       margin-bottom: 20px;
+      font-family: 'American Typewriter';
+      font-weight: 100;
+      font-style: normal;
+      font-size: 1.5vw;
+      line-height: 1.2;
+      white-space: wrap;
     }
 
     .back-button {
@@ -63,7 +84,7 @@
       position: absolute;
       cursor: pointer;
       bottom: 20px;
-      right: 20px;
+      right:20px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -146,21 +167,18 @@
 </head>
 <body>
 
-<div class="profile-container">
-  <div class="profile">
-    <img src="Images/YURI1.jpg" alt="Band Member Image">
-    <div class="profile-content">
+<img id=YURIIMAGE1 src="Images/YURI1.jpg" alt="Band Member Image">
+
+<div class="profile-content">
       <h1>YURI USUDA</h1>
-      <p>Background information about the band member goes here. You can include details about their role in the band, musical influences, and other interesting facts.</p>
-    </div>
+      <p>Papa Joe is originally from London and has been playing on the Tokyo music scene since 2014. Joe is part human and part mega-biodiverse mushroom seed bank, and enjoys marathon running, alliteration and liminal spaces. If you think his bass playing sucks, just wait til you hear his drumming. Stay toxic.</p>
   </div>
-  <a href="#" class="back-button" onclick="goBack()">GO BACK</a>
+  </div>
+  <a href="AZBHOME.html" class="back-button">GO BACK</a>
 </div>
 
 <script>
-  function goBack() {
-    window.history.back();
-  }
+  
 </script>
 
 </body>

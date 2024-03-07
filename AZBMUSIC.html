@@ -14,45 +14,66 @@
     }
 
     #EPCOVER {
-      width: 500px;
+      width: 33vw;
       height: auto;
       top: 0px;
       left: 0px;
-      padding-left: 80px; /* Adjust the percentage based on your design */
-      padding-top: 80px; /* Adjust the percentage based on your design */
-      position: relative;
-      min-width: 300px;
+      padding-left: 4vw;
+      padding-top: 5vw; 
+      position: absolute;
+      min-width: 50px;
     }
 
     #EPCOVER:hover {
       opacity: 0.5;
       cursor:pointer;
+      transform: scale(1.04);
+      transition: transform 0.3s ease;;
     }
 
     .content-container {
-      margin-left: 600px; /* Adjust the margin based on your design */
-      margin-right: 50px;
-      margin-top: -550px; /* Adjust the margin based on your design */
-
+      position: absolute;
+      margin-left: 40vw;
+      margin-right: auto;
+      margin-top: 2vh;
+      width: 59%;
+      max-width: 60vw;
+      min-width: 5vw;
+      justify-content: left;
     }
+
+    @media screen and (max-width: 600px) {
+    .content-container {
+        width: 45%; /* Adjust the width for smaller screens */
+        transform: scale(0.7);
+        position:absolute;
+        left:-41.5vw;
+        top: 140px;
+    }
+    }
+
+   
 
     h1 {
       font-family: 'Bebas Neue';
       font-weight: bolder;
       font-style: oblique;
-      font-size: 65px; /* Adjust the font size using viewport width units */
+      font-size: 4.5vw; /* Adjust the font size using viewport width units */
       color: #FFDE59;
       letter-spacing: 1px;
       white-space: nowrap;
+      margin-left: 0px;
     }
+
+    
 
     p {
       font-family: 'American Typewriter';
       font-weight: 100;
       font-style: normal;
-      font-size: 20px;
+      font-size: 1.5vw;
       line-height: 2;
-      
+      white-space: wrap;
     }
 
     a {
@@ -177,12 +198,10 @@
     <p>"...This demo, clocking in under 25 minutes in length, is a selection of five interesting tracks, each with their own unique identities. Ranging from slumbrous bedroom indie-track “Native” through 50s rock-n-roll inspired house-shaker "Stuck". The whole EP feels like a refreshing change of pace; it’s rare to hear a home-made demo EP so polished and with such infectious energy. Especially considering the vocals were recorded in a closet lined with mattresses and blankets owing to a personnel change on vocals early(er) in the band’s career..."<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Excerpt from <a href="https://theprogressivesubway.com/2021/12/24/review-aztec-brides-demo-ep/" target="_blank" class="paragraph-link">The Progressive Subway</a></p>
   </div>
 
-  <a href="#" class="back-button" onclick="goBack()">GO BACK</a>
+  <a href="AZBHOME.html" class="back-button">GO BACK</a>
 
   <script>
-    function goBack() {
-      window.history.back();
-    }
+    
   </script>
 
 </body>

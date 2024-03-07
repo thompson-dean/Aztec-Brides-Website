@@ -7,7 +7,7 @@
   <style>
     body {
       margin: 0;
-      padding: 100px 0 0;
+      padding: 0 0 0;
       font-family: Arial, sans-serif;
       background-color: #000000;
       position: relative;
@@ -15,16 +15,17 @@
 
 
     header {
-      position: fixed;
+      position: relative;
+      height: relative;
       top: 0;
       left: 0;
       right: 0;
       display: flex;
       justify-content: space-around;
       align-items: center;
-      padding: 20px 0; 
+      padding: 0.5vw;
       background-color: #000000; 
-      z-index: 1000; /* Ensure the header appears above other elements */
+      z-index: 1000;
     }
 
     a {
@@ -32,26 +33,29 @@
       display: inline-block;
     }
 
-    /*cunt*/
     /*buttons on top of the page*/
     button {
-      width: 250px; 
-      height: 80px;
-      font-size: 36px; 
+      width: auto;
+      min-width: none;
+      height: 4.5vw;
+      min-height: none;
+      font-size: 2.8vw;
       font-family: 'Bebas Neue';
+      font-style: oblique;
       background: linear-gradient(45deg, transparent 5%, #FFDE59 5%);
       border: 0;
       color: #ffffff;
-      letter-spacing: 3px;
-      line-height: 80px; /* Match the button height */
+      letter-spacing: 4px;
+      line-height: auto; /* Match the button height */
       box-shadow: 6px 0px 0px #f5cdff;
       outline: transparent;
       position: relative;
       cursor: pointer;
+      margin: 0.5cqh;
     }
 
     button span {
-  outline: 1px solid #fff; /* Add an outline around the text */
+  outline: 0px solid #fff; /* Add an outline around the text */
     }
 
     button::after {
@@ -127,16 +131,25 @@
       }
     }
 
-    
-    @media (max-width: 600px) {
+    /* Media Query for Mobile Devices */
+    @media screen and (max-width: 500px) {
     header {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+
+      }
+    button {
+        margin: 3px; /* Add some margin between buttons in mobile view */
+        font-size: calc(36px +36 * ((100vw - 600px)/600));
       }
 
-    button {
-        margin-top: 10px; /* Add some margin between buttons in mobile view */
-      }
-    }
+      .tooltip {
+        
+
+       }
+    } 
+
 
     /*homepage image*/
     img {
@@ -146,10 +159,10 @@
       position: relative;
     }
 
-       /* Tooltip container */
-       .tooltip {
+    /* Tooltip container */
+    .tooltip {
       position: relative;
-      display:inline-block;
+      display:inline-flex;
     }
 
     /* Tooltip text */
@@ -161,15 +174,16 @@
       font-family: 'Bebas Neue';
       font-style: oblique;
       font-weight: bolder;
+      font-size: 2vw;
       background: linear-gradient(45deg, transparent 5%, #FFDE59 5%);
       border:0;
       color: #ffffff;
       letter-spacing: 3px;
-      line-height: 50px;
+      line-height: 30px;
       box-shadow: 6px 0px 1px #f5cdff;
       outline: transparent;
-      position:relative;
-      z-index: 1;
+      position:absolute;
+      z-index: 1000;
       bottom: 5px;
       left: 100%;
       transform: translateX(-50%); 
@@ -259,10 +273,10 @@
       height: 100px;
       position: absolute;
       width: 100px;
+      cursor: pointer;
     }
 
-    .izquierda,
-    .derecha {
+    .izquierda, .derecha {
       position: absolute;
       width: 100px; /* Adjust the width of the play/pause icons */
       height: 100px; /* Adjust the height of the play/pause icons */
@@ -339,6 +353,7 @@
     43.773% 56.25486%
       );
       transition: clip-path 500ms;
+
     }
 
     .derecha {
@@ -409,6 +424,7 @@
     43.773% 43.428%
       );
       transition: clip-path 500ms;
+
     }
     .puntero {
       border-radius: 50%;
@@ -418,7 +434,8 @@
     }
 
     .active .icono {
-      transform: rotate(0deg);
+      transform: rotate(90deg);
+      left: -25%;
     }
 
     .active .izquierda {
@@ -488,6 +505,7 @@
     57.20925% 56.93358%,
     56.87342% 56.99471%
       );
+      left: 50%;
     }
 
     .active .derecha {
@@ -557,6 +575,7 @@
     57.20925% 42.53029%,
     56.87342% 42.46916%
       );
+      left: 50%;
     }
 
     
@@ -565,11 +584,11 @@
 
 <body>
   <header>
-    <a href="AZBMUSIC.html"><button>MUSIC</button></a>
-    <a href="AZBGIGS.html"><button>GIGS</button></a>
-    <a href="AZBMERCH.html"><button>MERCH</button></a>
-    <button> SOCIALS</button>
-    <a href="mailto:aztecbridesmanagement@gmail.com"><button>CONTACT</button></a>
+    <a href="AZBMUSIC.html"><button>&nbsp;&nbsp;&nbsp;MUSIC&nbsp;&nbsp;</button></a>
+    <a href="AZBGIGS.html"><button>&nbsp;&nbsp;&nbsp;GIGS&nbsp;&nbsp;</button></a>
+    <a href="AZBMERCH.html"><button>&nbsp;&nbsp;MERCH&nbsp;&nbsp;</button></a>
+    <button>&nbsp;&nbsp;SOCIALS&nbsp;</button>
+    <a href="mailto:aztecbridesmanagement@gmail.com"><button>&nbsp;&nbsp;CONTACT&nbsp;&nbsp;</button></a>
   </header>
 
 
@@ -632,7 +651,11 @@
 
         let audio = new Audio();
         let isPlaying = false;
-        audio.volume = 0.5;
+        let currentTrackIndex = 0;
+        audio.volume = 1;
+
+        audio.addEventListener('ended', playRandomTrack);
+
 
         function togglePlay() {
             if (isPlaying) {
