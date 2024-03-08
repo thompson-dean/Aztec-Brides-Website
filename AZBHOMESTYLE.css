@@ -1,11 +1,14 @@
 body {
   margin: 0;
-  padding-top: 6vh;
+  padding-top: 0;
   font-family: Arial, sans-serif;
   background-color: #000000;
   position: relative;
 }
 
+.topimage {
+  padding-top: 50px;
+}
 
 header {
   position: fixed;
@@ -15,23 +18,20 @@ header {
   right: 0;
   width: 100%;
   display: flex;
-  justify-content: space-around;
-  padding: 0.5vw;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
   background-color: #000000; 
   z-index: 1000;
 }
 
-a {
-  text-decoration: none;
-  display: inline-block;
-}
 
 /*buttons on top of the page*/
 button {
   width: auto;
   min-width: none;
-  height: 4.5vw;
-  min-height: none;
+  min-height: 4.01vh;
   font-size: 2.8vw;
   font-family: 'Bebas Neue';
   font-style: oblique;
@@ -39,16 +39,17 @@ button {
   border: 0;
   color: #ffffff;
   letter-spacing: 4px;
-  line-height: auto; /* Match the button height */
+  line-height: 4.5vw; /* Match the button height */
   box-shadow: 6px 0px 0px #f5cdff;
   outline: transparent;
   position: relative;
   cursor: pointer;
-  margin: 0.5cqh;
+  margin: 1cqh;
 }
 
 button span {
 outline: 0px solid #fff; /* Add an outline around the text */
+flex-grow: 1;
 }
 
 button::after {
@@ -77,6 +78,26 @@ button:hover::after {
   animation-timing-function: steps(2, end);
 }
 
+/* Dropdown button */
+.dropbtn {
+  width: auto;
+  min-width: none;
+  min-height: 4.01vh;
+  font-size: 2.8vw;
+  font-family: 'Bebas Neue';
+  font-style: oblique;
+  background: linear-gradient(45deg, transparent 5%, #FFDE59 5%);
+  border: 0;
+  color: #ffffff;
+  letter-spacing: 4px;
+  line-height: 4.5vw; /* Match the button height */
+  box-shadow: 6px 0px 0px #f5cdff;
+  outline: transparent;
+  position: relative;
+  cursor: pointer;
+  margin: 1cqh;
+}
+
 .dropdown-content::after {
   --slice-0: inset(50% 50% 50% 50%);
   --slice-1: inset(80% -6px 0 0);
@@ -101,28 +122,6 @@ button:hover::after {
 .dropdown-content:hover::after {
   animation: 1s glitch;
   animation-timing-function: steps(2, end);
-}
-
-
-/* Dropdown button */
-.dropbtn {
-  width: auto;
-  min-width: none;
-  height: 4.5vw;
-  min-height: none;
-  font-size: 2.8vw;
-  font-family: 'Bebas Neue';
-  font-style: oblique;
-  background: linear-gradient(45deg, transparent 5%, #FFDE59 5%);
-  border: 0;
-  color: #ffffff;
-  letter-spacing: 4px;
-  line-height: auto; /* Match the button height */
-  box-shadow: 6px 0px 0px #f5cdff;
-  outline: transparent;
-  position: relative;
-  cursor: pointer;
-  margin: 0.5cqh;
 }
 
 /* Dropdown content (hidden by default) */
@@ -212,42 +211,7 @@ button:hover::after {
   }
 }
 
-/* Media Query for Mobile Devices */
-@media screen and (max-width: 500px) {
-body {
-padding-top: 20vh;
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-  }
-button {
-    margin: 3px; /* Add some margin between buttons in mobile view */
-    font-size: calc(36px +36 * ((100vw - 600px)/600));
-  }
-
-  .area1 {
-  margin-top: 100px;
-  }
-
-  .area2 {
-    margin-top: 100px;
-  }
-
-  .area3 {
-  margin-top: 110px;
-  }
-
-  .area4{
-  margin-top: 100px;
-  }
-} 
-
-
-/*homepage image*/
+/*homepage images*/
 img {
   width: 100%;
   margin-top: 0px;
@@ -328,7 +292,7 @@ img {
   top: 5.5%;
   left: 80%;
   width: 10%;
-  height: 150px;
+  height: 2.5%;
   cursor: pointer;
 }
 
@@ -673,3 +637,72 @@ img {
   );
   left: 50%;
 }
+
+.hamburger-menu {
+  display: none; /* Hide by default on desktop */
+  cursor: pointer;
+  padding: 10px;
+}
+
+/*hamburger menu design*/
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #FFDE59;
+  margin: 5px 0;
+}
+
+/* Show the header buttons when the menu is toggled */
+.header-buttons {
+  display: flex;
+  justify-content: justify;
+  align-items: center;
+}
+
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 500px) {
+  body {
+  padding-top: 0vh;
+  }
+  
+  .topimage {
+    padding-top: 7vh;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    }
+  button {
+    margin: 3px; /* Add some margin between buttons in mobile view */
+    font-size: calc(36px +36 * ((100vw - 600px)/600));
+    }
+  
+  .area1 {
+    margin-top: 40px;
+  }
+
+  .area2 {
+    margin-top: 40px;
+  }
+
+  .area3 {
+    margin-top: 50px;
+  }
+
+  .area4{
+    margin-top: 20px;
+  }
+
+  .hamburger-menu {
+    display: block; /* Show on mobile view */
+    }
+  .header-buttons {
+    display: none; /* Hide header buttons by default on mobile */
+    flex-direction: column;
+    }
+  } 
+  

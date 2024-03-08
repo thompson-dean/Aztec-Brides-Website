@@ -35,18 +35,6 @@
       justify-content: left;
     }
 
-    @media screen and (max-width: 500px) {
-    .profile-content {
-        position:absolute;
-        width: 75%; 
-        left:-75.5vw;
-        top: 270px;
-    }
-    .p {
-      margin-top: 10px;
-    }
-    }
-
     h1 {
       font-family:'Bebas Neue';
       color: #FFDE59;
@@ -68,6 +56,22 @@
       line-height: 1.2;
       white-space: wrap;
     }
+
+    @media screen and (max-width: 500px) 
+    {
+    .profile-content {
+      position:absolute;
+      width: 75%; 
+      left:-75.5vw;
+      top: 270px;
+      }
+
+    .p {
+        margin-top: 10px;
+        font-size: 10vw; /* why isn't this affecting the font size when I resize to a small screen?*/
+      }
+     }
+
 
     .back-button {
       width: 160px; /* Set a fixed width for each button */
@@ -172,14 +176,11 @@
 <div class="profile-content">
       <h1>JOE FRY</h1>
       <p>Papa Joe is originally from London and has been playing on the Tokyo music scene since 2014. Joe is part human and part mega-biodiverse mushroom seed bank, and enjoys marathon running, alliteration and liminal spaces. If you think his bass playing sucks, just wait til you hear his drumming. Stay toxic.</p>
-  </div>
-  </div>
-  <a href="AZBHOME.html" class="back-button">GO BACK</a>
 </div>
 
-<script>
-  
-</script>
+<div>
+  <a href="AZBHOME.html" class="back-button">GO BACK</a>
+</div>
 
 </body>
 </html>
