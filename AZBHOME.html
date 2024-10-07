@@ -1,70 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="AZBHOMESTYLE.css">
+  <link rel="stylesheet" href="AZBHOMEstyles.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AZTEC BRIDES - HOME</title>
 </head>
 
 <body>
-  <!-- Not sure how to make the buttons appear on click -->
+
+  <!--HEADER AND HAM MENU-->
   <header>
-    <div class="hamburger-menu" onclick="toggleheaderButtons()">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
+    <div class="off-screen-menu">
+      <ul class="menu-list"> 
+        <li><a href="AZBMUSIC.html">MUSIC</a></li>
+        <li><a href="AZBGIGS.html">GIGS</a></li>
+        <li><a href="AZBMERCH.html">MERCH</a></li>
+        <li class="has-sub-menu">
+          <a href="#" class="sub-menu-toggle">SOCIALS</a>
+          <ul class="sub-menu">
+              <li><a href="https://www.instagram.com/aztec.brides/" target="_blank">Instagram</a></li>
+              <li><a href="https://www.facebook.com/aztecbridess" target="_blank">Facebook</a></li>
+              <li><a href="https://www.youtube.com/@aztec.brides/videos" target="_blank">YouTube</a></li>
+          </ul>
+      </li>
+        <li><a href="mailto:aztecbridesmanagement@gmail.com">CONTACT</a></li>
+        </ul>
     </div>
-<!-- What to put in the container??-->
+    
+    <nav>
+      <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
 
-    <nav class="header-buttons">
-      <a href="AZBMUSIC.html"><button>&nbsp;&nbsp;&nbsp;MUSIC&nbsp;&nbsp;</button></a>
-
-      <a href="AZBGIGS.html"><button>&nbsp;&nbsp;&nbsp;GIGS&nbsp;&nbsp;</button></a>
-
-      <a href="AZBMERCH.html"><button>&nbsp;&nbsp;MERCH&nbsp;&nbsp;</button></a>
-
-        <div class="dropdown">
-          <button class="dropbtn">&nbsp;&nbsp;SOCIALS&nbsp;</button>
-            <div class="dropdown-content">
-              <button><a href="https://www.instagram.com/aztec.brides/" target="_blank">INSTAGRAM</a></button>
-              <button><a href="https://www.facebook.com/aztecbridess" target="_blank">FACEBOOK</a></button>
-              <button><a href="https://www.youtube.com/@aztec.brides/videos" target="_blank">YOUTUBE</a></button>
-            </div>
-        </div>
-      <a href="mailto:aztecbridesmanagement@gmail.com"><button>&nbsp;&nbsp;CONTACT&nbsp;&nbsp;</button></a>
+      </div>
     </nav>
   </header>
+  <!--NAV BAR BUTTONS-->
+  <div id="nav-bar" class="nav-buttons">
+    <ul>
+      <li><a href="AZBMUSIC.html">MUSIC</a></li>
+      <li><a href="AZBGIGS.html">GIGS</a></li>
+      <li><a href="AZBMERCH.html">MERCH</a></li>
+
+      <li class="navbar-drop">
+        <a class="navbar-edit">SOCIALS</a>
+        <div class="navbar-drop-content">
+          <a href="https://www.instagram.com/aztec.brides/" target="_blank">INSTAGRAM</a>
+          <a href="https://www.facebook.com/aztecbridess" target="_blank">FACEBOOK</a>
+          <a href="https://www.youtube.com/@aztec.brides/videos" target="_blank">YOUTUBE</a>
+        </div>
+      </li>
+
+      <li><a href="mailto:aztecbridesmanagement@gmail.com">CONTACT</a></li>
+    </ul>
+  </div>
 
 
-  <!-- Homepage Image -->
-  <img src="Images/BAND1.jpg" alt="the band at the 7th floor balcony" class="topimage" style="width: 100%;">
-  <img src="Images/YURI2.jpg">
-  <img src="Images/JOE2.jpg">
-  <img src="Images/DEAN2.jpg">
-  <img src="Images/BETO2.jpg">
-
-  
-  <!-- Clickable areas -->
-  <a href="AZBJOE.html" class="tooltip area1">
-    <div class="tooltiptext">FUCK DENNIS</div>
-  </a>
-
-  <a href="AZBYURI.html" class="tooltip area2">
-    <div class="tooltiptext">AYYYYY</div>
-  </a>
-
-  <a href="AZBBETO.html" class="tooltip area3">
-    <div class="tooltiptext">RUM & COKE, PLEASE</div>
-  </a>
-
-  <a href="AZBDEAN.html" class="tooltip area4">
-    <div class="tooltiptext">OI YA CUNT!</div>
-  </a>
+<!-- Homepage Images -->
+<img src="Images/BAND1.jpg" alt="the band at the 7th floor balcony" class="topimage">
+<img src="Images/YURI2.jpg" class="homeimages">
+<img src="Images/JOE2.jpg" class="homeimages">
+<img src="Images/DEAN2.jpg" class="homeimages">
+<img src="Images/BETO2.jpg" class="homeimages">
 
 
-<!-- Music Player Button -->
-  <div class="botón" onclick="this.classList.toggle('active')">
+<!-- Clickable areas -->
+<a href="AZBJOE.html" class="tooltip" id="tooltip-area1">
+  <div class="tooltiptext">FUCK DENNIS</div>
+</a>
+
+<a href="AZBYURI.html" class="tooltip" id="tooltip-area2">
+  <div class="tooltiptext">AYYYYY</div>
+</a>
+
+<a href="AZBBETO.html" class="tooltip" id="tooltip-area3">
+  <div class="tooltiptext">RUM & COKE, PLEASE</div>
+</a>
+
+<a href="AZBDEAN.html" class="tooltip" id="tooltip-area4">
+  <div class="tooltiptext">OI YA CUNT!</div>
+</a>
+</div>
+
+<!-- Music Player -->
+<div class="botón" onclick="this.classList.toggle('active')">
   <div class="botón" onclick="togglePlay()">
     <div class="fondo" x="0" y="0" width="200" height="200"></div>
     <div class="icono" width="200" height="200">
@@ -75,58 +97,7 @@
   </div>
   </div>
 
-
-  <script>
-      //hamburger menu
-      function toggleheaderButtons() {
-      var headerButtons = document.querySelector('.header-buttons');
-      headerButtons.classList.toggle('show');
-    }
-     
-     // tooltips
-     function showTooltip(event, text) {
-      const tooltip = document.getElementById('tooltip');
-      tooltip.innerHTML = text;
-      tooltip.style.top = `${event.clientY}px`;
-      tooltip.style.left = `${event.clientX}px`;
-    }
-
-    //background music
-    const playlist = [
-        "Songs/Lie.mp3",
-        "Songs/Native.mp3",
-        "Songs/New Delhi.mp3",
-        "Songs/Nova.mp3",
-        "Songs/Stuck.mp3",
-        ];
-
-        let audio = new Audio();
-        let isPlaying = false;
-        let currentTrackIndex = 0;
-        audio.volume = matchMedia;
-
-        audio.addEventListener('ended', playRandomTrack);
-
-
-        function togglePlay() {
-            if (isPlaying) {
-                audio.pause();
-            } else {
-                playRandomTrack();
-            }
-            isPlaying = !isPlaying;
-        }
-
-        function playRandomTrack() {
-            const randomIndex = Math.floor(Math.random() * playlist.length);
-            const randomTrack = playlist[randomIndex];
-            audio.src = randomTrack;
-            audio.play();
-        }
-
-        
-  </script>
-
-
+  <!--SCRIPT-->
+  <script src="script.js"></script>
 </body>
 </html>

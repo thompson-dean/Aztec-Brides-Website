@@ -1,143 +1,35 @@
 body {
-  margin: 0;
-  padding-top: 0;
   font-family: Arial, sans-serif;
   background-color: #000000;
-  position: relative;
-}
-
-.topimage {
-  padding-top: 50px;
+  margin: 0;
 }
 
 header {
   position: fixed;
-  height: relative;
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
+  width: 100vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  padding-top: 0.5vh;
-  padding-bottom: 0.5vh;
   background-color: #000000; 
+}
+#nav-bar ul {
+  position: fixed;
+  align-items: justify;
+  display: flex;
+  list-style-type: none;
+  margin: 10px;
+  padding-left: 1vw;
+  padding-right: 1vw;
   z-index: 1000;
 }
 
-
-/*buttons on top of the page*/
-button {
-  width: auto;
-  min-width: none;
-  min-height: 4.01vh;
-  font-size: 2.8vw;
-  font-family: 'Bebas Neue';
-  font-style: oblique;
-  background: linear-gradient(45deg, transparent 5%, #FFDE59 5%);
-  border: 0;
-  color: #ffffff;
-  letter-spacing: 4px;
-  line-height: 4.5vw; /* Match the button height */
-  box-shadow: 6px 0px 0px #f5cdff;
-  outline: transparent;
-  position: relative;
-  cursor: pointer;
-  margin: 1cqh;
-}
-
-button span {
-outline: 0px solid #fff; /* Add an outline around the text */
-flex-grow: 1;
-}
-
-button::after {
-  --slice-0: inset(50% 50% 50% 50%);
-  --slice-1: inset(80% -6px 0 0);
-  --slice-2: inset(50% -6px 30% 0);
-  --slice-3: inset(10% -6px 85% 0);
-  --slice-4: inset(40% -6px 43% 0);
-  --slice-5: inset(80% -6px 5% 0);
-  
-  content: 'AZTEC BRIDES';
-  font-size: 30px;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, transparent 3%, #FFDE59 3%, #d8b6e7 5%, #FFDE59 5%);
-  text-shadow: -3px -3px 0px #FFDE59, 3px 3px 0px #d8b6e7;
-  clip-path: var(--slice-0);
-}
-
-button:hover::after {
-  animation: 1s glitch;
-  animation-timing-function: steps(2, end);
-}
-
-/* Dropdown button */
-.dropbtn {
-  width: auto;
-  min-width: none;
-  min-height: 4.01vh;
-  font-size: 2.8vw;
-  font-family: 'Bebas Neue';
-  font-style: oblique;
-  background: linear-gradient(45deg, transparent 5%, #FFDE59 5%);
-  border: 0;
-  color: #ffffff;
-  letter-spacing: 4px;
-  line-height: 4.5vw; /* Match the button height */
-  box-shadow: 6px 0px 0px #f5cdff;
-  outline: transparent;
-  position: relative;
-  cursor: pointer;
-  margin: 1cqh;
-}
-
-.dropdown-content::after {
-  --slice-0: inset(50% 50% 50% 50%);
-  --slice-1: inset(80% -6px 0 0);
-  --slice-2: inset(50% -6px 30% 0);
-  --slice-3: inset(10% -6px 85% 0);
-  --slice-4: inset(40% -6px 43% 0);
-  --slice-5: inset(80% -6px 5% 0);
-  
-  content: 'AZTEC BRIDES';
-  font-size: 30px;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, transparent 3%, #FFDE59 3%, #d8b6e7 5%, #FFDE59 5%);
-  text-shadow: -3px -3px 0px #FFDE59, 3px 3px 0px #d8b6e7;
-  clip-path: var(--slice-0);
-}
-
-.dropdown-content:hover::after {
-  animation: 1s glitch;
-  animation-timing-function: steps(2, end);
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #FFDE59;
-  z-index: 999;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  width: auto;
-  min-width: none;
+#nav-bar li {
+  min-width: 18vw; /* Set a minimum width for each list item */
   height: 4.5vw;
-  min-height: none;
+  min-height: 3vw;
   font-size: 2.8vw;
   font-family: 'Bebas Neue';
   font-style: oblique;
@@ -145,23 +37,90 @@ button:hover::after {
   border: 0;
   color: #ffffff;
   letter-spacing: 4px;
-  line-height: auto; /* Match the button height */
+  line-height: 3vw;
   box-shadow: 6px 0px 0px #f5cdff;
-  outline: transparent;
-  position: relative;
   cursor: pointer;
-  margin: 0.5cqh;
+  margin-left: 1cqh;
+  margin-right: 1cqh;
+  position: center absolute;
+  display: flex; /* Use flexbox */
+  justify-content: space-evenly; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  color: #ffffff;
+#nav-bar li:hover {
+  background-color: #f5cdff;
 }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+#nav-bar li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+}
+
+.navbar-drop {
+  position: relative;
+}
+
+.navbar-drop-content {
+  display: none;
+  background-color: transparent;
+  width: 90%;
+  position: absolute;
+  align-items: center;
+  top: 100%; /* Position the dropdown below the navbar item */
+  z-index: 1000;
+  padding: 10px;
+}
+
+.navbar-drop:hover .navbar-drop-content {
   display: block;
-  align-content: center;
+  opacity: 1;
+}
+
+.navbar-drop-content a {
+  background: linear-gradient(45deg, transparent 5%, #FFDE59 5%);
+  box-shadow: 5px 0px 0px #f5cdff;
+  text-align: center;
+  display: block; 
+  font-family: 'Bebas Neue';
+  font-style: oblique;
+  font-size: 2vw;
+  margin-bottom: 10px;
+
+}
+
+.navbar-drop-content a:hover {
+  background-color: #f5cdff;
+  cursor: pointer;
+}
+
+#nav-bar li:after,
+#nav-bar li .navbar-drop-content:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'AZTEC BRIDES';
+  font-size: 30px;
+  display: block;
+  position: absolute;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  background: linear-gradient(45deg, transparent 3%, #FFDE59 3%, #d8b6e7 5%, #FFDE59 5%);
+  text-shadow: -3px -3px 0px #FFDE59, 3px 3px 0px #d8b6e7;
+  clip-path: var(--slice-0);
+}
+
+#nav-bar li:hover::after,
+#nav-bar li :hover .navbar-drop-content:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
 }
 
 @keyframes glitch {
@@ -211,7 +170,11 @@ button:hover::after {
   }
 }
 
-/*homepage images*/
+.topimage {
+  width: 100%;
+  height: auto;
+}
+
 img {
   width: 100%;
   margin-top: 0px;
@@ -224,9 +187,8 @@ img {
   position: relative;
   display:inline-flex;
 }
-
 /* Tooltip text */
-.tooltip .tooltiptext {
+.tooltiptext {
   visibility: hidden;
   width:fit-content;
   padding: 5px;
@@ -252,47 +214,45 @@ img {
   justify-content: center;
   white-space: nowrap;
 }
-
 /* Show the tooltip on hover */
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
 }
-
 /* Define clickable areas */
-.area1 {
+#tooltip-area1 {
   position: absolute;
-  top: 2%;
+  top: 12%;
   left: 13%;
-  width: 14%;
-  height: 4%;
+  width: 15%;
+  height: 30%;
   cursor: pointer;
 }
 
-.area2 {
+#tooltip-area2 {
   position: absolute;
-  top: 4%;
-  left: 39%;
-  width: 6%;
-  height: 2.5%;
+  top: 24%;
+  left: 37%;
+  width: 12%;
+  height: 25%;
   cursor: pointer;
 }
 
-.area3 {
+#tooltip-area3 {
   position: absolute;
-  top: 4%;
-  left: 60%;
-  width: 10%;
-  height: 2.5%;
+  top: 28%;
+  left: 61%;
+  width: 12%;
+  height: 23%;
   cursor: pointer;
 }
 
-.area4 {
+#tooltip-area4 {
   position: absolute;
-  top: 5.5%;
+  top: 40%;
   left: 80%;
   width: 10%;
-  height: 2.5%;
+  height: 23%;
   cursor: pointer;
 }
 
@@ -301,7 +261,7 @@ img {
   align-items: flex-end;
   display: flex;
   justify-content: flex-start;
-  position:fixed;
+  position: fixed;
   left: 20px; 
   bottom: 20px;
 }
@@ -309,25 +269,18 @@ img {
 .fondo {
   background: #FFDE59;
   border-radius: 50%;
-  box-shadow: 0 1px 2.2px rgba(0, 0, 0, 0.051),
-    0 2.3px 5.3px rgba(0, 0, 0, 0.059), 0 4.4px 10px rgba(0, 0, 0, 0.06),
-    0 7.8px 17.9px rgba(0, 0, 0, 0.059), 0 14.6px 33.4px rgba(0, 0, 0, 0.059),
-    0 35px 80px rgba(0, 0, 0, 0.07);
   cursor: pointer;
   height: 50px;
   width: 50px;
 }
-
 .botón:active .fondo {
   background: #FFDE59;
 }
-
 .icono {
   height: 50px;
   position: relative; /* Added position relative */
   width: 50px;
 }
-
 .parte {
   background: rgb(0, 0, 0);
   height: 100px;
@@ -335,7 +288,6 @@ img {
   width: 100px;
   cursor: pointer;
 }
-
 .izquierda, .derecha {
   position: absolute;
   width: 100px; /* Adjust the width of the play/pause icons */
@@ -345,6 +297,77 @@ img {
   transform: translate(-50%, -50%); /* Center the icons precisely */
 }
 
+/*Play Button animation*/
+.derecha {
+  clip-path: polygon(
+    43.77666% 43.83035%,
+43.77874% 44.21955%,
+43.7795% 44.59109%,
+43.77934% 44.93442%,
+43.77855% 45.23898%,
+43.77741% 45.49423%,
+43.77625% 45.68961%,
+43.77533% 45.81458%,
+43.77495% 45.85858%,
+43.77518% 46.12957%,
+43.7754% 46.40056%,
+43.77563% 46.67156%,
+43.77585% 46.94255%,
+43.77608% 47.21355%,
+43.7763% 47.48454%,
+43.77653% 47.75554%,
+43.77675% 48.02654%,
+43.77653% 48.29753%,
+43.7763% 48.56852%,
+43.77608% 48.83952%,
+43.77585% 49.11051%,
+43.77563% 49.38151%,
+43.7754% 49.65251%,
+43.77518% 49.9235%,
+43.77495% 50.1945%,
+44.48391% 50.19436%,
+45.19287% 50.19422%,
+45.90183% 50.19408%,
+46.61079% 50.19394%,
+47.31975% 50.1938%,
+48.0287% 50.19366%,
+48.73766% 50.19353%,
+49.44662% 50.19338%,
+50.72252% 50.19353%,
+51.99842% 50.19366%,
+53.27432% 50.1938%,
+54.55022% 50.19394%,
+55.82611% 50.19408%,
+57.10201% 50.19422%,
+58.3779% 50.19436%,
+59.6538% 50.1945%,
+59.57598% 49.79136%,
+59.31883% 49.39688%,
+58.84686% 48.97402%,
+58.12456% 48.48572%,
+57.11643% 47.89493%,
+55.78697% 47.16458%,
+54.10066% 46.25764%,
+52.02202% 45.13705%,
+49.96525% 44.01371%,
+48.3319% 43.11074%,
+47.06745% 42.4094%,
+46.11739% 41.89096%,
+45.42719% 41.53667%,
+44.94235% 41.3278%,
+44.60834% 41.24561%,
+44.37066% 41.27137%,
+44.15383% 41.40575%,
+43.99617% 41.62256%,
+43.88847% 41.90709%,
+43.82151% 42.24461%,
+43.78608% 42.62041%,
+43.77304% 43.01978%,
+43.773% 43.428%
+  );
+  transition: clip-path 500ms;
+
+}
 .izquierda {
   clip-path: polygon(
     43.77666% 55.85251%,
@@ -416,76 +439,6 @@ img {
 
 }
 
-.derecha {
-  clip-path: polygon(
-    43.77666% 43.83035%,
-43.77874% 44.21955%,
-43.7795% 44.59109%,
-43.77934% 44.93442%,
-43.77855% 45.23898%,
-43.77741% 45.49423%,
-43.77625% 45.68961%,
-43.77533% 45.81458%,
-43.77495% 45.85858%,
-43.77518% 46.12957%,
-43.7754% 46.40056%,
-43.77563% 46.67156%,
-43.77585% 46.94255%,
-43.77608% 47.21355%,
-43.7763% 47.48454%,
-43.77653% 47.75554%,
-43.77675% 48.02654%,
-43.77653% 48.29753%,
-43.7763% 48.56852%,
-43.77608% 48.83952%,
-43.77585% 49.11051%,
-43.77563% 49.38151%,
-43.7754% 49.65251%,
-43.77518% 49.9235%,
-43.77495% 50.1945%,
-44.48391% 50.19436%,
-45.19287% 50.19422%,
-45.90183% 50.19408%,
-46.61079% 50.19394%,
-47.31975% 50.1938%,
-48.0287% 50.19366%,
-48.73766% 50.19353%,
-49.44662% 50.19338%,
-50.72252% 50.19353%,
-51.99842% 50.19366%,
-53.27432% 50.1938%,
-54.55022% 50.19394%,
-55.82611% 50.19408%,
-57.10201% 50.19422%,
-58.3779% 50.19436%,
-59.6538% 50.1945%,
-59.57598% 49.79136%,
-59.31883% 49.39688%,
-58.84686% 48.97402%,
-58.12456% 48.48572%,
-57.11643% 47.89493%,
-55.78697% 47.16458%,
-54.10066% 46.25764%,
-52.02202% 45.13705%,
-49.96525% 44.01371%,
-48.3319% 43.11074%,
-47.06745% 42.4094%,
-46.11739% 41.89096%,
-45.42719% 41.53667%,
-44.94235% 41.3278%,
-44.60834% 41.24561%,
-44.37066% 41.27137%,
-44.15383% 41.40575%,
-43.99617% 41.62256%,
-43.88847% 41.90709%,
-43.82151% 42.24461%,
-43.78608% 42.62041%,
-43.77304% 43.01978%,
-43.773% 43.428%
-  );
-  transition: clip-path 500ms;
-
-}
 .puntero {
   border-radius: 50%;
   cursor: pointer;
@@ -638,71 +591,187 @@ img {
   left: 50%;
 }
 
-.hamburger-menu {
-  display: none; /* Hide by default on desktop */
-  cursor: pointer;
-  padding: 10px;
-}
 
-/*hamburger menu design*/
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: #FFDE59;
-  margin: 5px 0;
-}
+/* MOBILE VIEW */
+@media screen and (max-width: 768px) { 
 
-/* Show the header buttons when the menu is toggled */
-.header-buttons {
-  display: flex;
-  justify-content: justify;
-  align-items: center;
-}
-
-
-/* Media Query for Mobile Devices */
-@media screen and (max-width: 500px) {
   body {
-  padding-top: 0vh;
+    width: 100%;
+    margin:0;
   }
-  
-  .topimage {
-    padding-top: 7vh;
-  }
-  
+
   header {
+    width: 100%;
+    height: 60px;
+    background-color: black;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-    }
-  button {
-    margin: 3px; /* Add some margin between buttons in mobile view */
-    font-size: calc(36px +36 * ((100vw - 600px)/600));
-    }
-  
-  .area1 {
-    margin-top: 40px;
+    position: fixed;
+    justify-content: center;
+    z-index: 1000;
+    top: 0;
   }
 
-  .area2 {
-    margin-top: 40px;
+/*TOP STUFF*/
+  .topimage {
+    width: 100%;
+    padding-top:40px
   }
 
-  .area3 {
-    margin-top: 50px;
+  .homeimages {
+    width: 100%;
   }
 
-  .area4{
-    margin-top: 20px;
-  }
-
-  .hamburger-menu {
-    display: block; /* Show on mobile view */
-    }
-  .header-buttons {
+  #nav-bar ul {
     display: none; /* Hide header buttons by default on mobile */
-    flex-direction: column;
-    }
-  } 
-  
+    overflow: hidden;
+  }
+
+/*OFF-SCREEN MENU*/
+.off-screen-menu {
+  background-color: rgb(0, 0, 0);
+  height: 600px;
+  width: 100%;
+  position: fixed;
+  top: -600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  transition: 0.4s ease;
+  z-index: 999;
+  line-height: 70px;
+  text-decoration: none;
+}
+.menu-list{
+  padding: 0;
+}
+.menu-list li {
+  width: 75vw;
+  font-family: 'Bebas Neue';
+  font-style: oblique;
+  background: linear-gradient(45deg, transparent 5%, #FFDE59 5%);
+  color: #ffffff;
+  letter-spacing: 4px;
+  line-height: 90px;
+  box-shadow: 6px 0px 0px #f5cdff;
+  position: center absolute;
+  display: list-item; /* Use flexbox */
+  list-style: none;
+  margin-bottom: 10px;
+}
+.menu-list a {
+  color: inherit; /* Inherit color from parent */
+  text-decoration: none; /* Remove underline */
+}
+.off-screen-menu.active {
+  top: 10px;
+}
+.sub-menu {
+  list-style: none;
+  display: none;
+  padding: 0;
+}
+.sub-menu:active{
+  display: list-item;
+  width: 75vw;
+  font-family: 'Bebas Neue';
+  font-style: oblique;
+  background: linear-gradient(45deg, transparent 5%, #FFDE59 5%);
+  color: #ffffff;
+  letter-spacing: 4px;
+  line-height: 90px;
+  box-shadow: 6px 0px 0px #f5cdff;
+  list-style: none;
+}
+
+/*HAM MENU ・ HAM MENU ACTIVE*/
+.ham-menu {
+  height: 25px;
+  width: 25px;
+  top: 14px;
+  position: fixed;
+  z-index: 999;
+  cursor: pointer;
+  display: block;
+  align-items: center;
+  position: fixed;
+}
+.ham-menu span {
+  height: 3px; 
+  width: 25px;
+  margin: 0;
+  background-color: #FFDE59;
+  border-radius: 25px; 
+  position:relative; 
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .2s ease;
+  display: block;
+}
+.ham-menu span:nth-child(1){
+  top: 25%;
+}
+.ham-menu span:nth-child(2){
+  top: 50%;
+}
+.ham-menu span:nth-child(3){
+  top: 75%;
+}
+.ham-menu span:nth-child(4){
+  top: 23%;
+}
+.ham-menu.active span:nth-child(2) {
+  transform: translate(-50%, 50%) rotate(-40deg);
+  transition: .2s ease;
+  width: 31px;
+  top:35%;
+} 
+.ham-menu.active span:nth-child(4) {
+  transform: translate(-50%, 50%) rotate(40deg);
+  transition: .2s ease;
+  width: 31px;
+  top:11%;
+}
+
+/*CLICKABLE AREAS FOR MOBILE VIEW*/
+#tooltip-area1 {
+  position: absolute;
+  top: 6%;
+  left: 12%;
+  width: 15%;
+  height: 8%;
+  cursor: pointer;
+}
+
+#tooltip-area2 {
+  position: absolute;
+  top: 9%;
+  left: 35%;
+  width: 15%;
+  height: 8%;
+  cursor: pointer;
+}
+
+#tooltip-area3 {
+  position: absolute;
+  top: 10%;
+  left: 59%;
+  width: 15%;
+  height: 8%;
+  cursor: pointer;
+}
+
+#tooltip-area4 {
+  position: absolute;
+  top: 13%;
+  left: 79%;
+  width: 12%;
+  height: 8%;
+  cursor: pointer;
+}
+}
+
+

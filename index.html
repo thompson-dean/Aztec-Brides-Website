@@ -22,13 +22,32 @@
       transition: transform 0.3s ease;
       width: 50%;
       max-width: 500px;
+      z-index: 999;
+      border-radius: 50%;
     }
 
     #image-button img {
       width: 100%;
       height: auto;
       display: block;
+      z-index: 999;
     }
+
+    #clicktoenter {
+    position: absolute;
+    width: 50%;
+    animation: spin 60s linear infinite;
+    z-index: 2;
+    }
+
+    @keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
     @media screen and (min-width: 1200px) {
       #image-button img {
@@ -64,10 +83,17 @@
       color: #fff;
       font-weight: bold;
     }
+    #clicktoenter {
+    position: absolute;
+    width: 50%;
+    animation: spin 60s linear infinite;
+    z-index: 2;
+    }
   </style>
 </head>
 
 <body>
+  <img src="Images/click to enter.png" id="clicktoenter">
   <div id="image-button">
     <a href="AZBHOME.html" id="button-link">
       <img src="AZB HOME BUTTON/AZB HOME BUTTON.png" alt="Image Button">

@@ -1,179 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AZTEC BRIDES - GIGS</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000000;
-      color: #ffffff;
-    }
-
-    h1 {
-      font-family: 'Bebas Neue';
-      font-weight: bolder;
-      font-style: oblique;
-      font-size: 65px; /* Adjust the font size using viewport width units */
-      color: #FFDE59;
-      letter-spacing: 1px;
-      text-align: center;
-      white-space: nowrap;
-    }
-
-    p {
-      font-family: 'American Typewriter';
-      font-weight: 100;
-      font-style: normal;
-      font-size: 20px;
-      line-height: 1;
-      text-align: center;
-    }
-
-    a {
-      color: #ffffff; /* Replace with your desired color code or color name */
-      text-decoration: none; /* Optional: Removes the default underline */
-    } 
-
-    a:hover {
-      /* Optional: Define styles for when the link is hovered */
-      color: #ffffff; /* Replace with your desired hover color */
-   }
-
-    .paragraph-link:hover {
-      color: #d8b6e7; /* Your desired hover color for the paragraphs */
-    }
-
-        .paragraph-link a:first-child:hover{
-      color: #d8b6e7; /* Set color for the first link */
-    }
-
-    .paragraph-link a:last-child:hover {
-      color: #b6e7c0; /* Set color for the second link */
-    }
-
-    .back-button {
-      width: 160px; /* Set a fixed width for each button */
-      height: 43px; /* Set a fixed height for each button */
-      font-size: 18px; /* Set a font size as needed */
-      font-family: 'Bebas Neue';
-      background: linear-gradient(45deg, transparent 5%, #FFDE59 5%);
-      border: 0;
-      color: #ffffff;
-      letter-spacing: 1px;
-      line-height: 43px; /* Match the button height */
-      box-shadow: 6px 0px 0px #f5cdff;
-      outline: transparent;
-      position: fixed;
-      cursor: pointer;
-      bottom: 20px;
-      right:20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-    }
-
-    .back-button::after {
-      --slice-0: inset(50% 50% 50% 50%);
-      --slice-1: inset(80% -6px 0 0);
-      --slice-2: inset(50% -6px 30% 0);
-      --slice-3: inset(10% -6px 85% 0);
-      --slice-4: inset(40% -6px 43% 0);
-      --slice-5: inset(80% -6px 5% 0);
-      
-      content: 'GO BACK';
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 20;
-      background: linear-gradient(45deg, transparent 3%, #FFDE59 3%, #d8b6e7 5%, #FFDE59 5%);
-      text-shadow: -3px -3px 0px #FFDE59, 3px 3px 0px #d8b6e7;
-      clip-path: var(--slice-0);
-    }
-
-    .back-button:hover::after {
-      animation: 1s glitch;
-      animation-timing-function: steps(2, end);
-    }
-
-    @keyframes glitch {
-      0% {
-        clip-path: var(--slice-1);
-        transform: translate(-20px, -10px);
-      }
-      10% {
-        clip-path: var(--slice-3);
-        transform: translate(10px, 10px);
-      }
-      20% {
-        clip-path: var(--slice-1);
-        transform: translate(-10px, 10px);
-      }
-      30% {
-        clip-path: var(--slice-3);
-        transform: translate(0px, 5px);
-      }
-      40% {
-        clip-path: var(--slice-2);
-        transform: translate(-5px, 0px);
-      }
-      50% {
-        clip-path: var(--slice-3);
-        transform: translate(5px, 0px);
-      }
-      60% {
-        clip-path: var(--slice-4);
-        transform: translate(5px, 10px);
-      }
-      70% {
-        clip-path: var(--slice-2);
-        transform: translate(-10px, 10px);
-      }
-      80% {
-        clip-path: var(--slice-5);
-        transform: translate(20px, -10px);
-      }
-      90% {
-        clip-path: var(--slice-1);
-        transform: translate(-10px, 0px);
-      }
-      100% {
-        clip-path: var(--slice-1);
-        transform: translate(0);
-      }
-    }
-
-  </style>
 </head>
+
+<header>
+  <div class="off-screen-menu">
+    <ul class="menu-list"> 
+      <li><a href="AZBMUSIC.html">MUSIC</a></li>
+      <li><a href="AZBGIGS.html">GIGS</a></li>
+      <li><a href="AZBMERCH.html">MERCH</a></li>
+      <li class="has-sub-menu">
+        <a href="#" class="sub-menu-toggle">SOCIALS</a>
+        <ul class="sub-menu">
+            <li><a href="https://www.instagram.com/aztec.brides/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.facebook.com/aztecbridess" target="_blank">Facebook</a></li>
+            <li><a href="https://www.youtube.com/@aztec.brides/videos" target="_blank">YouTube</a></li>
+        </ul>
+    </li>
+      <li><a href="mailto:aztecbridesmanagement@gmail.com">CONTACT</a></li>
+      </ul>
+  </div>
+  
+  <nav>
+    <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+  </nav>
+</header>
+
 <body>
-    <h1>UPCOMING GIGS</h1><br>
-    <a href="https://rubyroomtokyo.com" target="_blank" class="paragraph-link"><p>3/8 - Ruby Room</p></a><br>
-    <a href="https://ginza-rockytop.com" target="_blank" class="paragraph-link"><p>3/16 - Ginza Rocky Top</p></a><br>
-    <a href="https://toos.co.jp/basementbar/" target="_blank" class="paragraph-link"><p>3/18 - Basement Bar Shimo Kitazawa</p></a><br>
-    <a href="https://www.edowave.com" target="_blank" class="paragraph-link"><p>3/30 - GAL WAVE TOKYO by EDO WAVE @ Ruby Room</p><br></a>
-    <a href="https://www.toos.co.jp/lush/" target="_blank" class="paragraph-link"><p>4/6 - Shibuya LUSH</p></a><br>
-    <a href="https://www.instagram.com/musicbridgetokyo/" target="_blank" class="paragraph-link"><p>4/12 - Music Bridge Tokyo</p><br></a>
-    <a href="https://munifes.com" target="_blank" class="paragraph-link"><p>4/14 - むにフェス 千葉市稲毛海兵公園</p></a><br>
-    <a href="https://rubyroomtokyo.com" target="_blank" class="paragraph-link"><p>4/18 - Ruby Room</p></a><br>
+  <h1>UPCOMING GIGS</h1>
+  <div class="content-container">
+    <a href="https://www.edowave.com" target="_blank" class="paragraph-link"><p>11/24 - EDO WAVE TOKYO by EDO WAVE @ Ruby Room</p><br></a>
+    <a href="https://heavens-door-music.com/" target="_blank" class="paragraph-link"><p>10/18 - Heaven's Door 三軒茶屋</p></a><br>
+    <a href="https://www.instagram.com/the_den_koenji/?hl=en" target="_blank" class="paragraph-link"><p>9/15 - The Den 高円寺</p></a><br>
+    <a href="https://www.loft-prj.co.jp/flowersloft/" target="_blank" class="paragraph-link"><p>8/14 - 下北沢 Flowers LOFT</p></a><br>
+    <a href="https://heavens-door-music.com/" target="_blank" class="paragraph-link"><p>8/2 - Heaven's Door 三軒茶屋</p></a><br>
+    <a href="https://livehouse-ys.com/" target="_blank" class="paragraph-link"><p>7/21 - Y's Livehouse 川崎</p></a><br>
+    <a href="https://www.instagram.com/the_den_koenji/?hl=en" target="_blank" class="paragraph-link"><p>6/24 - The Den 高円寺</p></a><br>
+    <a href="https://brand.page/gamuso/events" target="_blank" class="paragraph-link"><p>6/20 - GAMUSO 阿佐ヶ谷</p></a><br>
+    <a href="https://heavens-door-music.com/" target="_blank" class="paragraph-link"><p>5/2 - Heaven's Door 三軒茶屋</p></a><br>
     <p class="paragraph-link">
       <a href="https://rubyroomtokyo.com" target="_blank">5/2 - Ruby Room</a>
-      <a href="https://www.instagram.com/berlinpartytokyo/" target="_blank">(@berlinpartytokyo)<br><br><br><br></a>
+      <a href="https://www.instagram.com/berlinpartytokyo/" target="_blank">(@berlinpartytokyo)<br><br></a>
     </p>
-    
-   
+    <a href="https://brand.page/gamuso/events" target="_blank" class="paragraph-link"><p>4/27 - GAMUSO 阿佐ヶ谷</p></a><br>
+    <a href="https://rubyroomtokyo.com" target="_blank" class="paragraph-link"><p>4/19 - Ruby Room</p></a><br>
+    <a href="https://munifes.com" target="_blank" class="paragraph-link"><p>4/14 - むにフェス 千葉市稲毛海兵公園</p></a><br>
+    <a href="https://www.instagram.com/musicbridgetokyo/" target="_blank" class="paragraph-link"><p>4/12 - Music Bridge Tokyo</p><br></a>
+    <a href="https://www.toos.co.jp/lush/" target="_blank" class="paragraph-link"><p>4/6 - Shibuya LUSH</p></a><br>
+    <a href="https://www.edowave.com" target="_blank" class="paragraph-link"><p>3/30 - GAL WAVE TOKYO by EDO WAVE @ Ruby Room</p><br></a>
+    <a href="https://toos.co.jp/basementbar/" target="_blank" class="paragraph-link"><p>3/18 - Basement Bar Shimo Kitazawa</p></a><br>
+    <a href="https://ginza-rockytop.com" target="_blank" class="paragraph-link"><p>3/16 - Ginza Rocky Top</p></a><br>
+    <a href="https://rubyroomtokyo.com" target="_blank" class="paragraph-link"><p>3/8 - Ruby Room</p></a><br>
 
+    <style>
 
-  <a href="AZBHOME.html" class="back-button">GO BACK</a>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+}
+header {
+  display: none;
+}
+h1 {
+  font-family: 'Bebas Neue';
+  font-weight: bolder;
+  font-style: oblique;
+  font-size: 65px; /* Adjust the font size using viewport width units */
+  color: #FFDE59;
+  letter-spacing: 1px;
+  text-align: center;
+  white-space: nowrap;
+  text-align: center;
+  top: 0;
+  transform: scale();
+  position: center;
 
-  <script>
+}
+
+p {
+  font-family: 'American Typewriter';
+  font-weight: 100;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+
+}
+
+a {
+  color: #ffffff; /* Replace with your desired color code or color name */
+  text-decoration: none; /* Optional: Removes the default underline */
+} 
+
+a:hover {
+  /* Optional: Define styles for when the link is hovered */
+  color: #ffffff; /* Replace with your desired hover color */
+}
+
+.paragraph-link:hover {
+  color: #d8b6e7; /* Your desired hover color for the paragraphs */
+}
+
+.paragraph-link a:first-child:hover{
+  color: #d8b6e7; /* Set color for the first link */
+}
+
+.paragraph-link a:last-child:hover {
+  color: #b6e7c0; /* Set color for the second link */
+}
+
+.back-button {
+  width: 160px; /* Set a fixed width for each button */
+  height: 43px; /* Set a fixed height for each button */
+  font-size: 18px; /* Set a font size as needed */
+  font-family: 'Bebas Neue';
+  background: linear-gradient(45deg, transparent 5%, #FFDE59 5%);
+  border: 0;
+  color: #ffffff;
+  letter-spacing: 1px;
+  line-height: 43px; /* Match the button height */
+  box-shadow: 6px 0px 0px #f5cdff;
+  outline: transparent;
+  position: fixed;
+  cursor: pointer;
+  bottom: 20px;
+  right:20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.back-button::after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
   
-  </script>
+  content: 'GO BACK';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 20;
+  background: linear-gradient(45deg, transparent 3%, #FFDE59 3%, #d8b6e7 5%, #FFDE59 5%);
+  text-shadow: -3px -3px 0px #FFDE59, 3px 3px 0px #d8b6e7;
+  clip-path: var(--slice-0);
+}
 
+.back-button:hover::after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+h1 {
+  font-family: 'Bebas Neue';
+  font-weight: bolder;
+  font-style: oblique;
+  font-size: 10vw; /* Adjust the font size using viewport width units */
+  color: #FFDE59;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  margin-left: 0px;
+}
+
+p {
+  font-family: 'American Typewriter';
+  font-weight: 100;
+  font-style: normal;
+  font-size: 5vw;
+  line-height: 1.3;
+  white-space: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.content-container {
+position: absolute;
+margin-left: 10px;
+margin-right: 10px;
+width: 95%;
+max-width: none;
+min-width: none;
+justify-content: justify;
+padding-bottom: 10vh;
+}
+
+.back-button {
+    position: fixed;
+    right: 20px;
+    bottom: 15px;
+  }
+}
+
+/* MOBILE VIEW */
+@media screen and (max-width: 768px) { 
+
+#nav-bar ul {
+    display: none; /* Hide header buttons by default on mobile */
+    overflow: hidden;
+}
+
+body {
+  width: 100%;
+  margin:0;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  z-index: 1000;
+  top: 0;
+}
+
+h1 {
+ padding-top: 50px;
+}
+
+
+/*OFF-SCREEN MENU*/
+.off-screen-menu {
+background-color: rgb(0, 0, 0);
+height: 600px;
+width: 100%;
+position: fixed;
+top: -600px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+font-size: 3rem;
+transition: 0.4s ease;
+z-index: 999;
+line-height: 70px;
+text-decoration: none;
+}
+.menu-list{
+  padding:0;
+}
+.menu-list li {
+width: 75vw;
+font-family: 'Bebas Neue';
+font-style: oblique;
+background: linear-gradient(45deg, transparent 5%, #FFDE59 5%);
+color: #ffffff;
+letter-spacing: 4px;
+line-height: 90px;
+box-shadow: 6px 0px 0px #f5cdff;
+position: center absolute;
+display: list-item;
+list-style: none;
+margin-bottom: 10px;
+}
+.menu-list a {
+  color: inherit;
+  text-decoration: none;
+}
+.off-screen-menu.active {
+  top: 10px;
+}
+.sub-menu {
+  list-style: none;
+  display: none;
+  padding: 0;
+}
+.sub-menu:active{
+  display: list-item;
+  width: 75vw;
+  font-family: 'Bebas Neue';
+  font-style: oblique;
+  background: linear-gradient(45deg, transparent 5%, #FFDE59 5%);
+  color: #ffffff;
+  letter-spacing: 4px;
+  line-height: 90px;
+  box-shadow: 6px 0px 0px #f5cdff;
+  list-style: none;
+}
+
+/*HAM MENU ・ HAM MENU ACTIVE*/
+.ham-menu {
+height: 25px;
+width: 25px;
+top: 14px;
+position: fixed;
+z-index: 999;
+cursor: pointer;
+display: block;
+align-items: center;
+position: fixed;
+}
+.ham-menu span {
+height: 3px; 
+width: 25px;
+margin: 0;
+background-color: #FFDE59;
+border-radius: 25px; 
+position:relative; 
+top: 50%; 
+left: 50%;
+transform: translate(-50%, -50%);
+transition: .2s ease;
+display: block;
+}
+.ham-menu span:nth-child(1){
+top: 25%;
+}
+.ham-menu span:nth-child(2){
+top: 50%;
+}
+.ham-menu span:nth-child(3){
+top: 75%;
+}
+.ham-menu span:nth-child(4){
+top: 23%;
+}
+.ham-menu.active span:nth-child(2) {
+transform: translate(-50%, 50%) rotate(-40deg);
+transition: .2s ease;
+width: 31px;
+top:35%;
+} 
+.ham-menu.active span:nth-child(4) {
+transform: translate(-50%, 50%) rotate(40deg);
+transition: .2s ease;
+width: 31px;
+top:11%;
+}
+}
+
+</style>
+
+<a href="AZBHOME.html" class="back-button">GO HOME</a>
+
+  <!--SCRIPT-->
+  <script src="script.js"></script>
 </body>
 </html>

@@ -13,7 +13,7 @@
       color: #ffffff;
     }
 
-    #JOEIMAGE1 {
+    #BETOIMAGE1 {
       position: absolute;
       left: 10px;
       top: 10px;
@@ -26,43 +26,28 @@
       
     }
 
-
     .profile-content {
-      position: absolute;
-      margin-top: -3vh;
+      position: relative;
+      top: -60px;
       margin-left: 77vw;
-      width: 20vw;
+      margin-right: 0;
+      width: 21.5%;
       justify-content: left;
-    }
-
-    @media screen and (max-width: 500px) {
-    .profile-content {
-        position: absolute;
-        width: 75%; 
-        left:-75.5vw;
-        top: 270px;
-    }
-    .p {
-      margin-top: 10px;
-    }
     }
 
     h1 {
       font-family:'Bebas Neue';
       color: #FFDE59;
-      text-align:left;
       font-size: 5vw;
+      margin-top: 63px;
     }
 
     p {
-      position: absolute;
+      margin-top: 0;
       text-align: justify;
-      margin-top: -17px;
-      white-space: wrap;
       font-size: 1.5vw;
-      margin-bottom: 20px;
       font-family: 'American Typewriter';
-      font-weight: 100;
+      font-weight: 10;
       font-style: normal;
       font-size: 1.5vw;
       line-height: 1.2;
@@ -163,23 +148,53 @@
       }
     }
 
+    @media screen and (max-width: 768px) 
+    {
+      #BETOIMAGE1 {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      left: 0px;
+      top: 0px;
+      }
+
+      .profile-content {
+      position: absolute;
+      margin-left: 10px;
+      margin-top: 68vw;
+      width: 95%;
+      }
+
+      h1{
+        font-size: 10vw;
+      }
+
+      p {
+        font-size: 5.5vw;
+      }
+
+      .back-button {
+        position: fixed;
+        right: 20px;
+        bottom: 15px;
+      }
+    }
+
+
   </style>
 </head>
 <body>
 
-<img id=JOEIMAGE1 src="Images/BETO1.jpg" alt="Band Member Image">
+<img id=BETOIMAGE1 src="Images/BETO1.jpg" alt="Band Member Image">
 
 <div class="profile-content">
       <h1>BETO DE ARMAS</h1>
-      <p>Papa Joe is originally from London and has been playing on the Tokyo music scene since 2014. Joe is part human and part mega-biodiverse mushroom seed bank, and enjoys marathon running, alliteration and liminal spaces. If you think his bass playing sucks, just wait til you hear his drumming. Stay toxic.</p>
-  </div>
-  </div>
-  <a href="AZBHOME.html" class="back-button">GO BACK</a>
+      <p>Over the top lovable fool funkadelic cosmic soul brotha. Hyper self-aware, hyper doesn't care. A tasty jam is the epitome of happiness for Beto. He loves red wine, debating ancient history, aliens, Graham Hancock et.al, shredding the gnar, and has a soft spot for underdogs.</p>
 </div>
 
-<script>
-  
-</script>
+<div>
+  <a href="AZBHOME.html" class="back-button">GO HOME</a>
+</div>
 
 </body>
 </html>
