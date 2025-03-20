@@ -23,7 +23,7 @@ header {
   margin: 10px;
   padding-left: 1vw;
   padding-right: 1vw;
-  z-index: 1000;
+  z-index: 1;
 }
 
 #nav-bar li {
@@ -168,6 +168,12 @@ header {
     clip-path: var(--slice-1);
     transform: translate(0);
   }
+}
+
+#posterloop {
+  width: 100%;
+  height: auto;
+  z-index: 1000;
 }
 
 .topimage {
