@@ -1,5 +1,4 @@
-//HAM MENU
-// Open and close the hamburger menu
+//HAM MENU // Open and close the hamburger menu
 const hamMenu = document.querySelector('.ham-menu');
 const offScreenMenu = document.querySelector('.off-screen-menu');
 const subMenuLinks = document.querySelectorAll('.sub-menu-toggle');
@@ -74,5 +73,3 @@ const playlist = [
         audio.src = randomTrack;
         audio.play();
     }
-
-    
