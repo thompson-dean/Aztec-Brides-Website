@@ -73,3 +73,9 @@ const playlist = [
         audio.src = randomTrack;
         audio.play();
     }
+
+    //Autoplay on mobile not fullscreen
+    document.addEventListener('DOMContentLoaded', () => {
+        const video = document.querySelector('posterloop');
+        video.play().catch(error => console.log('Autoplay prevented:', error));
+      });
