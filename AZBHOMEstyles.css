@@ -231,37 +231,37 @@ img {
 /* Define clickable areas */
 #tooltip-area1 {
   position: absolute;
-  top: 45%;
+  top: 101%;
   left: 15%;
   width: 13%;
-  height: 25%;
+  height: 60%;
   cursor: pointer;
 }
 
 #tooltip-area2 {
   position: absolute;
-  top: 24%;
-  left: 37%;
-  width: 12%;
-  height: 25%;
+  top: 101%;
+  left: 57%;
+  width: 10%;
+  height: 60%;
   cursor: pointer;
 }
 
 #tooltip-area3 {
   position: absolute;
-  top: 28%;
-  left: 61%;
-  width: 12%;
-  height: 23%;
+  top: 111%;
+  left: 73%;
+  width: 10%;
+  height: 45%;
   cursor: pointer;
 }
 
 #tooltip-area4 {
   position: absolute;
-  top: 40%;
-  left: 80%;
-  width: 10%;
-  height: 23%;
+  top: 122%;
+  left: 38%;
+  width: 17%;
+  height: 27%;
   cursor: pointer;
 }
 
