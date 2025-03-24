@@ -151,6 +151,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 text-decoration: none;
+z-index: 100;
 }
 
 .back-button::after {
@@ -250,8 +251,9 @@ height: auto;
 padding-left: 10px;
 padding-top: 55px;
 padding-right: 10px;
-z-index: 1;
+z-index: 10;
 }
+
 h1 {
 font-family: 'Bebas Neue';
 font-weight: bolder;
@@ -263,6 +265,7 @@ white-space: nowrap;
 margin-left: 0px;
 margin-top: 6vh;
 }
+
 p {
 font-family: 'American Typewriter';
 font-weight: 100;
@@ -272,6 +275,7 @@ line-height: 30px;
 white-space: wrap;
 text-align: justify;
 }
+
 .content-container {
 width: 95vw;
 position: absolute;
@@ -282,10 +286,12 @@ max-width: none;
 justify-content: justify;
 padding-bottom: 10vh;
 }
+
 .back-button {
   position: fixed;
   right: 20px;
   bottom: 15px;
+  z-index: 10;
 }
 
 /*OFF-SCREEN MENU*/
@@ -347,7 +353,6 @@ margin-bottom: 10px;
   box-shadow: 6px 0px 0px #f5cdff;
   list-style: none;
 }
-
 
 
 /*HAM MENU ・ HAM MENU ACTIVE*/

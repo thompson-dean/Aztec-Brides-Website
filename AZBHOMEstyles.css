@@ -173,17 +173,56 @@ header {
   }
 }
 
+#posterloopcontainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
 #posterloop {
   width: 100%;
   height: auto;
-  z-index: 1000;
+  z-index: 10;
 }
+#gigsHomepageContainer {
+  width: 100vw;
+  position: absolute;
+  top: 76vw;
+  left: 0;
+  display: block;
+}
+#gigsHomepageTitle {
+  font-family: 'Bebas Neue';
+  font-weight: bolder;
+  font-style: oblique;
+  font-size: 5vw; /* Adjust the font size using viewport width units */
+  color: rgb(236, 26, 75);
+  letter-spacing: 1px;
+  text-align: center;
+  top: 0;
+  transform: scale();
+  position: center;
+  text-decoration: none;
+}
+.paragraph-link {
+  color: #000000;;
+  font-family: 'American Typewriter';
+  font-weight: bolder;
+  font-size: 30px;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+}
+.paragraph-link:hover{
+  color: rgb(236, 26, 75);
+}
+
+
 
 .topimage {
   width: 100%;
   height: auto;
 }
-
 img {
   width: 100%;
   margin-top: 0px;
@@ -784,6 +823,23 @@ img {
   width: 14%;
   height: 8%;
   cursor: pointer;
+}
+
+#gigsHomepageContainer {
+  width: 100vw;
+  position: absolute;
+  top: 90vw;
+  left: 0;
+  display: block;
+}
+.paragraph-link {
+  font-size: 4vw;
+}
+#gigsHomepageList {
+  width: 100vw;
+  top: 17vw;
+  position: absolute;
+  display: block;
 }
 }
 
