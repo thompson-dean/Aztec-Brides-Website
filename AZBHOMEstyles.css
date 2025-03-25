@@ -204,7 +204,7 @@ header {
   position: center;
   text-decoration: none;
 }
-.paragraph-link {
+.gigsHomepageListparagraphlink {
   color: #000000;;
   font-family: 'American Typewriter';
   font-weight: bolder;
@@ -213,7 +213,7 @@ header {
   text-align: center;
   text-decoration: none;
 }
-.paragraph-link:hover{
+.gigsHomepageListparagraphlink:hover{
   color: rgb(236, 26, 75);
 }
 
@@ -828,11 +828,11 @@ img {
 #gigsHomepageContainer {
   width: 100vw;
   position: absolute;
-  top: 90vw;
+  top: 91.5vw;
   left: 0;
   display: block;
 }
-.paragraph-link {
+.gigsHomepageListparagraphlink {
   font-size: 4vw;
 }
 #gigsHomepageList {

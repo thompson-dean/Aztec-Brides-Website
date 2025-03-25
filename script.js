@@ -74,8 +74,26 @@ const playlist = [
         audio.play();
     }
 
-    //Autoplay on mobile not fullscreen
+    //Autoplay on mobile not fullscreen - OLD SCRIPT NOT SURE IF THIS IS 
+    //RESPONSIBLE FOR THE PAGE WORKING - NEED TEST
     document.addEventListener('DOMContentLoaded', () => {
         const video = document.querySelector('posterloop');
         video.play().catch(error => console.log('Autoplay prevented:', error));
       });
+
+
+
+      //NEW SCRIPT//
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const video = document.getElementById("posterloop");
+
+    // Check if the user is on a mobile device
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      video.muted = true; // Keep muted on mobile
+    } else {
+      video.muted = false; // Play with sound on desktop
+    }
+  });
