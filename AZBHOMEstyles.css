@@ -216,6 +216,21 @@ header {
 .gigsHomepageListparagraphlink:hover{
   color: rgb(236, 26, 75);
 }
+.h2 {
+  font-family: 'Bebas Neue';
+  font-weight: bolder;
+  font-style: oblique;
+  font-size: 3vw; /* Adjust the font size using viewport width units */
+  color: rgb(236, 26, 75);
+  letter-spacing: 1px;
+  text-align: center;
+  transform: scale();
+  position: center;
+  text-decoration: none;
+}
+.h2:hover{
+  color:#fbc320; 
+}
 
 
 
@@ -276,7 +291,6 @@ img {
   height: 60%;
   cursor: pointer;
 }
-
 #tooltip-area2 {
   position: absolute;
   top: 101%;
@@ -285,7 +299,6 @@ img {
   height: 60%;
   cursor: pointer;
 }
-
 #tooltip-area3 {
   position: absolute;
   top: 111%;
@@ -294,7 +307,6 @@ img {
   height: 45%;
   cursor: pointer;
 }
-
 #tooltip-area4 {
   position: absolute;
   top: 122%;
@@ -313,7 +325,6 @@ img {
   left: 20px; 
   bottom: 20px;
 }
-
 .fondo {
   background: #FFDE59;
   border-radius: 50%;
@@ -486,19 +497,16 @@ img {
   transition: clip-path 500ms;
 
 }
-
 .puntero {
   border-radius: 50%;
   cursor: pointer;
   height: 100px;
   width: 100px;
 }
-
 .active .icono {
   transform: rotate(90deg);
   left: -25%;
 }
-
 .active .izquierda {
   clip-path: polygon(
     56.42249% 57.01763%,
@@ -568,7 +576,6 @@ img {
   );
   left: 50%;
 }
-
 .active .derecha {
   clip-path: polygon(
     56.42249% 42.44625%,
@@ -840,6 +847,9 @@ img {
   top: 17vw;
   position: absolute;
   display: block;
+}
+h2 {
+  display: none;
 }
 }
 
