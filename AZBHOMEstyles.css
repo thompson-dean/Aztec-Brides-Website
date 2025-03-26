@@ -235,7 +235,7 @@ header {
 
 
 #musicSection {
-width: 100%;
+width: 100vw;
 height: 100vh;
 border-top: 100px;
 position: relative;
@@ -243,10 +243,8 @@ position: relative;
 #EPCOVER {
   width: 33vw;
   height: auto;
-  top: 0px;
-  left: 0px;
-  padding-left: 4vw;
-  padding-top: 20vh;
+  top: 20vh;
+  left: 4vw;
   position: relative;
   min-width: 50px;
   }
@@ -257,12 +255,10 @@ position: relative;
   transition: transform 0.3s ease;;
   } 
 #musicContentContainer {
-  position: relative;
-  top: -73vh;
+  position: absolute;
+  top: 12vh;
   margin-left: 40vw;
   width: 59%;
-  max-width: 60vw;
-  min-width: 5vw;
   justify-content: left;
   }
 #aztecbridesep {
@@ -911,19 +907,27 @@ h2 {
   display: none;
 }
 
+#musicSection {
+  height: 140vh;
+  }
 #EPCOVER {
   width: 90vw;
   height: auto;
   padding-top: 2vh;
   position: absolute;
-  padding-left: 5vw;
-  padding-right: 5vw
   } 
 #musicContentContainer {
-  position: absolute;
   top: 45vh;
-  margin-left:none;
+  text-align: center;
   width: 90vw;
+  margin-left:5vw
   }
-
+#aztecbridesep {
+    display: inline-block;
+    font-size: 9.5vw;
+  }
+#demoparagraph{
+    font-size: 4vw;
+    text-align: justify;
+  }
 }
