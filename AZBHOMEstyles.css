@@ -4,6 +4,7 @@ body {
   margin: 0;
 }
 
+html {scroll-behavior: smooth;}
 header {
   position: fixed;
   top: 0;
@@ -195,7 +196,7 @@ header {
   font-family: 'Bebas Neue';
   font-weight: bolder;
   font-style: oblique;
-  font-size: 5vw; /* Adjust the font size using viewport width units */
+  font-size: 5vw;
   color: rgb(236, 26, 75);
   letter-spacing: 1px;
   text-align: center;
@@ -220,7 +221,7 @@ header {
   font-family: 'Bebas Neue';
   font-weight: bolder;
   font-style: oblique;
-  font-size: 3vw; /* Adjust the font size using viewport width units */
+  font-size: 3vw; 
   color: rgb(236, 26, 75);
   letter-spacing: 1px;
   text-align: center;
@@ -233,11 +234,69 @@ header {
 }
 
 
-
-.topimage {
-  width: 100%;
-  height: auto;
+#musicSection {
+width: 100%;
+height: 100vh;
+border-top: 100px;
+position: relative;
 }
+#EPCOVER {
+  width: 33vw;
+  height: auto;
+  top: 0px;
+  left: 0px;
+  padding-left: 4vw;
+  padding-top: 20vh;
+  position: relative;
+  min-width: 50px;
+  }
+#EPCOVER:hover {
+  opacity: 0.5;
+  cursor:pointer;
+  transform: scale(1.04);
+  transition: transform 0.3s ease;;
+  } 
+#musicContentContainer {
+  position: relative;
+  top: -73vh;
+  margin-left: 40vw;
+  width: 59%;
+  max-width: 60vw;
+  min-width: 5vw;
+  justify-content: left;
+  }
+#aztecbridesep {
+    font-family: 'Bebas Neue';
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 4.5vw; /* Adjust the font size using viewport width units */
+    color: #FFDE59;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    margin-left: 0px;
+  }
+#demoparagraph {
+    font-family: 'American Typewriter';
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1.5vw;
+    line-height: 2;
+    white-space: wrap;
+    color: #ffffff;
+  }
+#demoparagraphlink {
+  color: #ffd83c;
+  text-decoration: none;
+}
+#demoparagraphlink:hover {
+  color:#d8b6e7;
+}
+
+
+
+
+
+/*homepage Images*/
 img {
   width: 100%;
   margin-top: 0px;
@@ -851,6 +910,20 @@ img {
 h2 {
   display: none;
 }
+
+#EPCOVER {
+  width: 90vw;
+  height: auto;
+  padding-top: 2vh;
+  position: absolute;
+  padding-left: 5vw;
+  padding-right: 5vw
+  } 
+#musicContentContainer {
+  position: absolute;
+  top: 45vh;
+  margin-left:none;
+  width: 90vw;
+  }
+
 }
-
-
