@@ -240,10 +240,13 @@ height: 100vh;
 border-top: 100px;
 position: relative;
 }
+#listennowbutton {
+  display: none;
+}
 #EPCOVER {
   width: 33vw;
   height: auto;
-  top: 20vh;
+  top: 17vh;
   left: 4vw;
   position: relative;
   min-width: 50px;
@@ -256,7 +259,7 @@ position: relative;
   } 
 #musicContentContainer {
   position: absolute;
-  top: 12vh;
+  top: 9vh;
   margin-left: 40vw;
   width: 59%;
   justify-content: left;
@@ -908,10 +911,14 @@ h2 {
 }
 
 #musicSection {
-  height: 140vh;
+  height: 112vh;
+  }
+  #listennowbutton {
+    display: none;
   }
 #EPCOVER {
   width: 90vw;
+  top: 0;
   height: auto;
   padding-top: 2vh;
   position: absolute;
@@ -929,5 +936,6 @@ h2 {
 #demoparagraph{
     font-size: 4vw;
     text-align: justify;
+    margin-top: 0;
   }
 }
