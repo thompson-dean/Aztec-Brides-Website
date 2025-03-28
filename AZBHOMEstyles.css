@@ -911,7 +911,7 @@ h2 {
 }
 
 #musicSection {
-  height: 120vh;
+  height: 140vh;
   }
 #listennowbutton {
   display: block;
@@ -937,7 +937,7 @@ h2 {
   position: absolute;
   } 
 #musicContentContainer {
-  top: 48vh;
+  top: 54vh;
   text-align: center;
   width: 90vw;
   margin-left:5vw
