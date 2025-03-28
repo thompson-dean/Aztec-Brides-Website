@@ -247,8 +247,8 @@ position: relative;
   width: 33vw;
   height: auto;
   top: 17vh;
-  left: 4vw;
-  position: relative;
+  left: 5vw;
+  position: absolute;
   min-width: 50px;
   }
 #EPCOVER:hover {
@@ -911,7 +911,7 @@ h2 {
 }
 
 #musicSection {
-  height: 135vh;
+  height: 137vh;
   }
 #listennowbutton {
   display: block;
