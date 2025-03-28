@@ -914,7 +914,7 @@ h2 {
   height: 137vh;
   }
 #listennowbutton {
-  display: block;
+  display: flex; /* Switch to flexbox for centering */
   width: 96%;
   font-size: 18px; /* Set a font size as needed */
   font-family: 'Bebas Neue';
@@ -925,9 +925,10 @@ h2 {
   line-height: 43px; /* Match the button height */
   box-shadow: 6px 0px 0px #f5cdff;
   outline: transparent;
-  align-items: center;
-  justify-content: center;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
   text-decoration: none;
+  height: 50px; /* Set a fixed height or use padding */
 }
 #EPCOVER {
   width: 90vw;
