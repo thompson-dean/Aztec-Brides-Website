@@ -911,7 +911,7 @@ h2 {
 }
 
 #musicSection {
-  height: 140vh;
+  height: 135vh;
   }
 #listennowbutton {
   display: block;
@@ -944,7 +944,7 @@ h2 {
   }
 #aztecbridesep {
     display: inline-block;
-    font-size: 9.5vw;
+    font-size:  10vw;
   }
 #demoparagraph{
     font-size: 4vw;
