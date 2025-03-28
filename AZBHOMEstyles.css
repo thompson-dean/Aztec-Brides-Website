@@ -911,20 +911,33 @@ h2 {
 }
 
 #musicSection {
-  height: 112vh;
+  height: 120vh;
   }
-  #listennowbutton {
-    display: none;
-  }
+#listennowbutton {
+  display: block;
+  width: 96%;
+  font-size: 18px; /* Set a font size as needed */
+  font-family: 'Bebas Neue';
+  background: linear-gradient(45deg, transparent 5%, #FFDE59 5%);
+  border: 0;
+  color: #ffffff;
+  letter-spacing: 1px;
+  line-height: 43px; /* Match the button height */
+  box-shadow: 6px 0px 0px #f5cdff;
+  outline: transparent;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
 #EPCOVER {
   width: 90vw;
   top: 0;
   height: auto;
-  padding-top: 2vh;
+  padding-top: 2.5vh;
   position: absolute;
   } 
 #musicContentContainer {
-  top: 45vh;
+  top: 48vh;
   text-align: center;
   width: 90vw;
   margin-left:5vw
