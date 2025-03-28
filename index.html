@@ -3,6 +3,8 @@
 <head>
   <title>AZTEC BRIDES</title>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
@@ -32,25 +34,27 @@
       display: block;
       z-index: 999;
     }
+
     #clicktoenter {
-        position: absolute;
-        width: 50%;
-        animation: spin 60s linear infinite;
-        z-index: 2;
-      }
+      position: absolute;
+      width: 50%;
+      max-width: 900px;
+      animation: spin 60s linear infinite;
+      z-index: 2;
+    }
 
     @keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
 
     @media screen and (max-width: 768px) {
       #image-button img {
-        max-width: 500px;
+        width: 100%;
       }
       #clicktoenter {
         position: absolute;
