@@ -32,13 +32,12 @@
       display: block;
       z-index: 999;
     }
-
     #clicktoenter {
-    position: absolute;
-    width: 50%;
-    animation: spin 60s linear infinite;
-    z-index: 2;
-    }
+        position: absolute;
+        width: 50%;
+        animation: spin 60s linear infinite;
+        z-index: 2;
+      }
 
     @keyframes spin {
   from {
@@ -49,9 +48,15 @@
   }
 }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (max-width: 768px) {
       #image-button img {
         max-width: 500px;
+      }
+      #clicktoenter {
+        position: absolute;
+        width: 73%;
+        animation: spin 60s linear infinite;
+        z-index: 2;
       }
     }
 
@@ -82,12 +87,6 @@
       text-decoration: none;
       color: #fff;
       font-weight: bold;
-    }
-    #clicktoenter {
-    position: absolute;
-    width: 73%;
-    animation: spin 60s linear infinite;
-    z-index: 2;
     }
   </style>
 </head>
