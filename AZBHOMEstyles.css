@@ -236,6 +236,7 @@ header {
 
 .scroll-container {
   width: 100%;
+  height: auto;
   overflow-x: auto;
   white-space: nowrap;
 }
@@ -964,7 +965,7 @@ img {
   }
 
   #musicSection {
-  height: 137vh;
+  height: 138vh;
   }
   #listennowbutton {
   display: flex; /* Switch to flexbox for centering */
@@ -1017,8 +1018,8 @@ img {
   #COMING-SOON {
       position: absolute;
       margin-top: 0;
-      top:29vh;
-      right: 5vw;
+      top:28vh;
+      right: 7vw;
       font-family: 'Bebas Neue';
       font-weight: bolder;
       font-style: oblique;
