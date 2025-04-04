@@ -971,7 +971,7 @@ img {
   }
   #musicSection {
   width: 100vw;
-  height: 167vh;
+  height: 173vh;
   display: flex;
   flex-direction: row;
   }
@@ -1040,6 +1040,8 @@ img {
       #aztecbridesep {
         display: inline-block;
         font-size:  10vw;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
       }
       #demoparagraph{
         width: 90vw;
