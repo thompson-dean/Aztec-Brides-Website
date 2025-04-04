@@ -970,8 +970,8 @@ img {
     white-space: nowrap;
   }
   #musicSection {
-  width: 200vw;
-  height: 147vh;
+  width: 100vw;
+  height: 167vh;
   display: flex;
   flex-direction: row;
   }
@@ -980,24 +980,23 @@ img {
     display: inline-block;
     vertical-align: top;
     left: 0;
-    margin-top: 33vh;
+    margin-top: 36vh;
     z-index: 0;
   }
   #AZBPROMO {
       margin-top: 5vh;
     }
   #MORE-TITLE{
-      width: max-content;
+      width: 100%;
       margin:0;
       top: 2vh;
       left: 3vw;
     }
   #COMING-SOON {
-      width: max-content;
+      width: 100%;
       position: absolute;
-      margin-bottom: 100px;
-      top:28vh;
-      right: 7vw;
+      top:29vh;
+      left: 20vw;
       font-family: 'Bebas Neue';
       font-weight: bolder;
       font-style: oblique;
