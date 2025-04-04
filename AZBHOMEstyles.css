@@ -1,11 +1,10 @@
+html {scroll-behavior: smooth;}
 body {
   font-family: Arial, sans-serif;
   background-color: #000000;
   margin: 0;
   overflow-x: hidden;
 }
-
-html {scroll-behavior: smooth;}
 header {
   position: fixed;
   top: 0;
@@ -234,7 +233,7 @@ header {
   color:#fbc320; 
 }
 
-.scroll-container {
+#scroll-container {
   width: 100%;
   height: auto;
   overflow-x: auto;
@@ -765,6 +764,8 @@ img {
   body {
     width: 100%;
     margin:0;
+    padding: 0;
+    overflow-x: hidden;
   }
 
   header {
@@ -964,60 +965,37 @@ img {
       display: none;
   }
 
+  #scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
   #musicSection {
-  height: 138vh;
+  width: 200vw;
+  height: 147vh;
+  display: flex;
+  flex-direction: row;
   }
-  #listennowbutton {
-  display: flex; /* Switch to flexbox for centering */
-  width: 96%;
-  font-size: 18px; /* Set a font size as needed */
-  font-family: 'Bebas Neue';
-  background: linear-gradient(45deg, transparent 5%, #FFDE59 5%);
-  border: 0;
-  color: #ffffff;
-  letter-spacing: 1px;
-  line-height: 43px; /* Match the button height */
-  box-shadow: 6px 0px 0px #f5cdff;
-  outline: transparent;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  text-decoration: none;
-  height: 50px; /* Set a fixed height or use padding */
-  }
-  #EPCOVER {
-  width: 90vw;
-  top: 0;
-  height: auto;
-  padding-top: 2.5vh;
-  position: absolute;
-  } 
-  #musicContentContainer {
-  top: 54vh;
-  text-align: center;
-  width: 90vw;
-  margin-left:5vw
-  }
-  #aztecbridesep {
+    #AZBMORE {
+    width: 100vw;
     display: inline-block;
-    font-size:  10vw;
-  }
-  #demoparagraph{
-    width: 90vw;
-    font-size: 4vw;
-    text-align: justify;
-    margin-top: 0;
+    vertical-align: top;
+    left: 0;
+    margin-top: 33vh;
+    z-index: 0;
   }
   #AZBPROMO {
       margin-top: 5vh;
     }
   #MORE-TITLE{
+      width: max-content;
       margin:0;
       top: 2vh;
       left: 3vw;
     }
   #COMING-SOON {
+      width: max-content;
       position: absolute;
-      margin-top: 0;
+      margin-bottom: 100px;
       top:28vh;
       right: 7vw;
       font-family: 'Bebas Neue';
@@ -1029,4 +1007,45 @@ img {
       transform: scale();
       z-index: 10;
     }
+      #listennowbutton {
+      display: flex; /* Switch to flexbox for centering */
+      width: 96%;
+      font-size: 18px; /* Set a font size as needed */
+      font-family: 'Bebas Neue';
+      background: linear-gradient(45deg, transparent 5%, #FFDE59 5%);
+      border: 0;
+      color: #ffffff;
+      letter-spacing: 1px;
+      line-height: 43px; /* Match the button height */
+      box-shadow: 6px 0px 0px #f5cdff;
+      outline: transparent;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      text-decoration: none;
+      height: 50px; /* Set a fixed height or use padding */
+      }
+      #EPCOVER {
+      width: 90vw;
+      top: 0;
+      height: auto;
+      padding-top: 2.5vh;
+      position: absolute;
+      } 
+      #musicContentContainer {
+      top: 54vh;
+      left:0;
+      text-align: center;
+      width: 90vw;
+      margin-left:5vw
+      }
+      #aztecbridesep {
+        display: inline-block;
+        font-size:  10vw;
+      }
+      #demoparagraph{
+        width: 90vw;
+        font-size: 4vw;
+        text-align: justify;
+        margin-top: 0;
+      }
 }
