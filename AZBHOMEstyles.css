@@ -232,12 +232,6 @@ header {
 }
 
 
-
-
-
-
-
-
 #scroll-container {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -1022,8 +1016,9 @@ img {
   }
 
   #scroll-container {
-    overflow-x: auto;
+    overflow:hidden;
     white-space: nowrap;
+    height: 173vh;
   }
   #scrollArrow {
     display: none;
@@ -1045,7 +1040,7 @@ img {
     height: auto;
     display: block;
     position: relative;
-    margin-left: -8vw;
+    margin-right:0;
   }
   #MORE-TITLE{
       width: 100%;
