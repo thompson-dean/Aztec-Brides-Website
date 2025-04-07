@@ -1,3 +1,16 @@
+// ARROW SCRIPT
+const scrollArrow = document.getElementById("scrollArrow");
+const scrollContainer = document.getElementById("scroll-container");
+
+if (scrollArrow && scrollContainer) {
+  scrollArrow.addEventListener("click", () => {
+    scrollContainer.scrollBy({
+      left: window.innerWidth,
+      behavior: "smooth"
+    });
+  });
+}
+
 //HAM MENU // Open and close the hamburger menu
 const hamMenu = document.querySelector('.ham-menu');
 const offScreenMenu = document.querySelector('.off-screen-menu');
@@ -74,26 +87,16 @@ const playlist = [
         audio.play();
     }
 
-    //Autoplay on mobile not fullscreen - OLD SCRIPT NOT SURE IF THIS IS 
-    //RESPONSIBLE FOR THE PAGE WORKING - NEED TEST
-    document.addEventListener('DOMContentLoaded', () => {
-        const video = document.querySelector('posterloop');
-        video.play().catch(error => console.log('Autoplay prevented:', error));
-      });
+    // DOM CONTENT LOADED //
+document.addEventListener("DOMContentLoaded", () => {
+  const video = document.getElementById("posterloop");
 
+  // Check if the user is on a mobile device
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-
-      //NEW SCRIPT//
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const video = document.getElementById("posterloop");
-
-    // Check if the user is on a mobile device
-    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-    if (isMobile) {
-      video.muted = true; // Keep muted on mobile
-    } else {
-      video.muted = false; // Play with sound on desktop
-    }
-  });
+  if (isMobile) {
+    video.muted = true; // Keep muted on mobile
+  } else {
+    video.muted = false; // Play with sound on desktop
+  }
+}); 
