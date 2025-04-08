@@ -393,7 +393,7 @@ scroll-snap-align: start;
 position: absolute;
 left: 100vw;
 z-index:1;
-top:0;
+top: 2vh;
 }
 
 
