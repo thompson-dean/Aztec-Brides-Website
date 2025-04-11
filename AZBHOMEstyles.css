@@ -835,18 +835,14 @@ img {
   padding-top: 50px;
 }
 
-  /*.topimage {
+.homeimages {
     width: 100%;
-  }*/
+}
 
-  .homeimages {
-    width: 100%;
-  }
-
-  #nav-bar ul {
+#nav-bar ul {
     display: none; /* Hide header buttons by default on mobile */
     overflow: hidden;
-  }
+}
 
 /*OFF-SCREEN MENU*/
 .off-screen-menu {
@@ -1032,7 +1028,7 @@ img {
     display: inline-block;
     vertical-align: top;
     left: 0;
-    margin-top: 36vh;
+    margin-top: 22vh;
     z-index: 0;
   }
   #AZBPROMO {
@@ -1041,6 +1037,7 @@ img {
     display: block;
     position: relative;
     margin-right:0;
+    top: 10vh;
   }
   #MORE-TITLE{
       width: 100%;
@@ -1051,7 +1048,7 @@ img {
   #COMING-SOON {
       width: 100%;
       position: absolute;
-      top:32vh;
+      top:38.5vh;
       left: 43vw;
       font-family: 'Bebas Neue';
       font-weight: bolder;
@@ -1081,13 +1078,13 @@ img {
   }
   #EPCOVER {
   width: 90vw;
-  top: 0;
+  top: 20vh;
   height: auto;
   padding-top: 2.5vh;
   position: absolute;
   } 
   #musicContentContainer {
-  top: 55vh;
+  top: 75vh;
   left:0;
   text-align: center;
   width: 90vw;
