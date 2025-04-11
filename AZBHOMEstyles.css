@@ -1016,7 +1016,7 @@ img {
   #scroll-container {
     overflow:hidden;
     white-space: nowrap;
-    height: 173vh;
+    height: 180vh;
   }
   #scrollArrow {
     display: none;
@@ -1050,7 +1050,7 @@ img {
   #COMING-SOON {
       width: 100%;
       position: absolute;
-      top:41vh;
+      top:43vh;
       left: 43vw;
       font-family: 'Bebas Neue';
       font-weight: bolder;
@@ -1080,7 +1080,7 @@ img {
   }
   #EPCOVER {
   width: 90vw;
-  top: 25vh;
+  top: 23.5vh;
   height: auto;
   padding-top: 2.5vh;
   position: absolute;
