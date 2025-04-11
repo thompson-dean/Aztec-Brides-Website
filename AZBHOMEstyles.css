@@ -1011,6 +1011,8 @@ img {
       display: none;
   }
 
+
+
   #scroll-container {
     overflow:hidden;
     white-space: nowrap;
@@ -1021,7 +1023,7 @@ img {
   }
   #musicSection {
   width: 100vw;
-  height: 173vh;
+  height: 180vh;
   }
   #AZBMORE {
     width: 100vw;
@@ -1048,7 +1050,7 @@ img {
   #COMING-SOON {
       width: 100%;
       position: absolute;
-      top:38.5vh;
+      top:41vh;
       left: 43vw;
       font-family: 'Bebas Neue';
       font-weight: bolder;
@@ -1078,13 +1080,13 @@ img {
   }
   #EPCOVER {
   width: 90vw;
-  top: 20vh;
+  top: 25vh;
   height: auto;
   padding-top: 2.5vh;
   position: absolute;
   } 
   #musicContentContainer {
-  top: 75vh;
+  top: 80vh;
   left:0;
   text-align: center;
   width: 90vw;
