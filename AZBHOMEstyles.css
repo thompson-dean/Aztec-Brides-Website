@@ -1016,14 +1016,14 @@ img {
   #scroll-container {
     overflow:hidden;
     white-space: nowrap;
-    height: 180vh;
+    height: 185vh;
   }
   #scrollArrow {
     display: none;
   }
   #musicSection {
   width: 100vw;
-  height: 180vh;
+  height: 185vh;
   }
   #AZBMORE {
     width: 100vw;
@@ -1050,7 +1050,7 @@ img {
   #COMING-SOON {
       width: 100%;
       position: absolute;
-      top:43vh;
+      top:41vh;
       left: 43vw;
       font-family: 'Bebas Neue';
       font-weight: bolder;
