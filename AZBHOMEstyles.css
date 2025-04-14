@@ -331,8 +331,8 @@ transform: scale();
 z-index: 10;
 }
 #AZBPROMO {
-height: 100vh;
-width: auto;
+width: 100vw;
+height: auto;
 display: block;
 margin-left: auto;
 margin-right: auto;
@@ -1034,7 +1034,7 @@ img {
     z-index: 0;
   }
   #AZBPROMO {
-    width: 100vw;
+    width: 90vw;
     height: auto;
     display: block;
     position: relative;
