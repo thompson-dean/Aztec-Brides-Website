@@ -247,7 +247,7 @@ header {
 #scrollArrow {
 position: absolute; /* Stays in place */
 left: 95vw; /* Adjust for spacing */
-bottom: 50%; /* Centered vertically */
+bottom: 46%; /* Centered vertically */
 transform: translateY(50%);
 font-size: 3rem; /* Adjust size */
 color: #FFDE59; /* Match your theme */
@@ -305,7 +305,7 @@ display: block;
 position: absolute;
 top:0;
 left: 3vw;
-margin-top: 10vh;
+margin-top: 8vh;
 font-family: 'Bebas Neue';
 font-weight: bolder;
 font-style: oblique;
@@ -319,7 +319,7 @@ z-index: 10;
 position: absolute;
 margin-top: 0;
 margin-bottom: 0;
-top:80vh;
+top:79vh;
 right: 3vw;
 font-family: 'Bebas Neue';
 font-weight: bolder;
@@ -1038,7 +1038,9 @@ img {
     height: auto;
     display: block;
     position: relative;
-    margin-right:0;
+    border-style: double;
+    border-color: #fbc320;
+    border-width:5px;
     top: 10vh;
   }
   #MORE-TITLE{
