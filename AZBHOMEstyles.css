@@ -477,6 +477,16 @@ img {
   cursor: pointer;
 }
 
+/*made in Tokyo*/
+#madeintokyo{
+  padding-top: 2px;
+  margin: 0px;
+  color: white;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 100;
+}
+
 /*music player button*/ 
 .botón {
   align-items: flex-end;
