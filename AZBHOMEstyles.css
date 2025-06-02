@@ -396,7 +396,64 @@ z-index:1;
 top: 2vh;
 }
 
+/*live videos section*/
+#live-videos-section {
+  height: 100vh;
+}
+#live-videos-section-title{
+  font-family: 'Bebas Neue';
+  font-weight: bolder;
+  font-style: oblique;
+  font-size: 5vw; 
+  color:#fbc320; 
+  letter-spacing: 1px;
+  text-align: center;
+  transform: scale();
+  position: center;
+  text-decoration: none;
+  margin:0;
+  padding-top:14vh;
+}
+.carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding: 60px 20px;
+      scroll-padding-inline: 10vw;
+}
+.carousel::-webkit-scrollbar {
+      display: none; /* hide scrollbar */
+}
+.slide {
+      flex: 0 0 50vw;
+      scroll-snap-align: center;
+      border-radius: 12px;
+      overflow: hidden;
+      padding-left: 5vw;
+      padding-right: 5vw;
+}
+iframe {
+      width: 100%;
+      aspect-ratio: 16/9;
+      border: none;
+}
 
+/*the band title*/
+#the-band-title {
+  font-size: 14vw;
+  font-family: 'Bebas Neue';
+  font-weight: bolder;
+  font-style: oblique;
+  color: rgb(236, 26, 75);
+  letter-spacing: 1px;
+  text-align: center;
+  transform: scale();
+  position: center;
+  text-decoration: none;
+  margin-top: 7vh;
+  margin-bottom: 2vh;
+}
 
 /*homepage Images*/
 img {
@@ -1026,7 +1083,7 @@ img {
   #scroll-container {
     overflow:hidden;
     white-space: nowrap;
-    height: 185vh;
+    height: 165vh;
   }
   #scrollArrow {
     display: none;
@@ -1063,7 +1120,7 @@ img {
       width: 100%;
       position: absolute;
       top:41vh;
-      left: 43vw;
+      left: 22vw;
       font-family: 'Bebas Neue';
       font-weight: bolder;
       font-style: oblique;
@@ -1079,14 +1136,12 @@ img {
   font-size: 18px; /* Set a font size as needed */
   font-family: 'Bebas Neue';
   background: linear-gradient(45deg, transparent 5%, #FFDE59 5%);
-  border: 0;
   color: #ffffff;
   letter-spacing: 1px;
   line-height: 43px; /* Match the button height */
-  box-shadow: 6px 0px 0px #f5cdff;
+  box-shadow: 15px 0px 0px #f5cdff;
   outline: transparent;
   justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
   text-decoration: none;
   height: 50px; /* Set a fixed height or use padding */
   }
@@ -1098,7 +1153,7 @@ img {
   position: absolute;
   } 
   #musicContentContainer {
-  top: 80vh;
+  top: 70vh;
   left:0;
   text-align: center;
   width: 90vw;
@@ -1116,4 +1171,38 @@ img {
     text-align: justify;
     margin-top: 0;
   }
+  #live-videos-section {
+  height: 40vh;
+}
+  #live-videos-section-title{
+  padding-top: 5vh;
+  font-size: 14vw;
+  font-family: 'Bebas Neue';
+  font-weight: bolder;
+  font-style: oblique;
+  color: rgb(236, 26, 75);
+  letter-spacing: 1px;
+  text-align: center;
+  top: 0;
+  transform: scale();
+  position: center;
+  text-decoration: none;
+}
+.slide {
+      flex: 0 0 75vw;
+      scroll-snap-align: center;
+      border-radius: 12px;
+      overflow: hidden;
+      padding-left: 5vw;
+      padding-right: 5vw;
+}
+iframe {
+      width: 100%;
+      aspect-ratio: 16/9;
+      border: none;
+}
+
+#madeintokyo{
+bottom: 5vh;
+}
 }
