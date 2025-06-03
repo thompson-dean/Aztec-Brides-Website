@@ -1120,7 +1120,7 @@ img {
       width: 100%;
       position: absolute;
       top:41vh;
-      left: 22vw;
+      left: 44vw;
       font-family: 'Bebas Neue';
       font-weight: bolder;
       font-style: oblique;
@@ -1153,7 +1153,7 @@ img {
   position: absolute;
   } 
   #musicContentContainer {
-  top: 70vh;
+  top: 72vh;
   left:0;
   text-align: center;
   width: 90vw;
@@ -1187,6 +1187,9 @@ img {
   transform: scale();
   position: center;
   text-decoration: none;
+}
+.carousel {
+      padding-top:20px;
 }
 .slide {
       flex: 0 0 75vw;
