@@ -1120,7 +1120,7 @@ img {
       width: 100%;
       position: absolute;
       top:41vh;
-      left: 46vw;
+      left: 47vw;
       font-family: 'Bebas Neue';
       font-weight: bolder;
       font-style: oblique;
@@ -1139,7 +1139,7 @@ img {
   color: #ffffff;
   letter-spacing: 1px;
   line-height: 43px; /* Match the button height */
-  box-shadow: 13px 0px 0px #f5cdff;
+  box-shadow: 14px 0px 0px #f5cdff;
   outline: transparent;
   justify-content: center; /* Center horizontally */
   text-decoration: none;
