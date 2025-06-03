@@ -441,11 +441,11 @@ iframe {
 
 /*the band title*/
 #the-band-title {
-  font-size: 14vw;
   font-family: 'Bebas Neue';
   font-weight: bolder;
   font-style: oblique;
-  color: rgb(236, 26, 75);
+  font-size: 5vw; 
+  color:#fbc320; 
   letter-spacing: 1px;
   text-align: center;
   transform: scale();
@@ -1058,135 +1058,135 @@ img {
   cursor: pointer;
 }
 
-  #gigsHomepageContainer {
-      width: 100vw;
-      position: absolute;
-      top: 91.5vw;
-      left: 0;
-      display: block;
-  }
-  .gigsHomepageListparagraphlink {
-      font-size: 4vw;
-  }
-  #gigsHomepageList {
-      width: 100vw;
-      top: 17vw;
-      position: absolute;
-      display: block;
-  }
-  h2 {
-      display: none;
-  }
-
-
-
-  #scroll-container {
-    overflow:hidden;
-    white-space: nowrap;
-    height: 165vh;
-  }
-  #scrollArrow {
-    display: none;
-  }
-  #musicSection {
-  width: 100vw;
-  height: 185vh;
-  }
-  #AZBMORE {
+#gigsHomepageContainer {
     width: 100vw;
-    display: inline-block;
-    vertical-align: top;
+    position: absolute;
+    top: 91.5vw;
     left: 0;
-    margin-top: 22vh;
-    z-index: 0;
-  }
-  #AZBPROMO {
-    width: 90vw;
-    height: auto;
     display: block;
-    position: relative;
-    border-style: double;
-    border-color: #fbc320;
-    border-width:5px;
-    top: 10vh;
-  }
-  #MORE-TITLE{
-      width: 100%;
-      margin:0;
-      top: 2vh;
-      left: 4vw;
-  }
-  #COMING-SOON {
-      width: 100%;
-      position: absolute;
-      top:41vh;
-      left: 47vw;
-      font-family: 'Bebas Neue';
-      font-weight: bolder;
-      font-style: oblique;
-      font-size: 10vw; 
-      color: rgb(236, 26, 75);
-      letter-spacing: 1px;
-      transform: scale();
-      z-index: 10;
-  }
-  #listennowbutton {
-  display: flex; /* Switch to flexbox for centering */
-  width: 96%;
-  font-size: 18px; /* Set a font size as needed */
-  font-family: 'Bebas Neue';
-  background: linear-gradient(45deg, transparent 5%, #FFDE59 5%);
-  color: #ffffff;
-  letter-spacing: 1px;
-  line-height: 43px; /* Match the button height */
-  box-shadow: 14px 0px 0px #f5cdff;
-  outline: transparent;
-  justify-content: center; /* Center horizontally */
-  text-decoration: none;
-  height: 50px; /* Set a fixed height or use padding */
-  }
-  #EPCOVER {
-  width: 90vw;
-  top: 23.5vh;
-  height: auto;
-  padding-top: 2.5vh;
-  position: absolute;
-  } 
-  #musicContentContainer {
-  top: 72vh;
-  left:0;
-  text-align: center;
-  width: 90vw;
-  margin-left:5vw
-  }
-  #aztecbridesep {
-    display: inline-block;
-    font-size:  10vw;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-  }
-  #demoparagraph{
-    width: 90vw;
-    font-size: 4vw;
-    text-align: justify;
-    margin-top: 0;
-  }
-  #live-videos-section {
-  height: 40vh;
 }
-  #live-videos-section-title{
-  padding-top: 5vh;
-  font-size: 14vw;
-  font-family: 'Bebas Neue';
-  font-weight: bolder;
-  font-style: oblique;
-  color: rgb(236, 26, 75);
-  letter-spacing: 1px;
-  text-align: center;
-  top: 0;
-  transform: scale();
-  position: center;
-  text-decoration: none;
+.gigsHomepageListparagraphlink {
+    font-size: 4vw;
+}
+#gigsHomepageList {
+    width: 100vw;
+    top: 17vw;
+    position: absolute;
+    display: block;
+}
+h2 {
+    display: none;
+}
+
+
+
+#scroll-container {
+  overflow:hidden;
+  white-space: nowrap;
+  height: 165vh;
+}
+#scrollArrow {
+  display: none;
+}
+#musicSection {
+width: 100vw;
+height: 185vh;
+}
+#AZBMORE {
+  width: 100vw;
+  display: inline-block;
+  vertical-align: top;
+  left: 0;
+  margin-top: 22vh;
+  z-index: 0;
+}
+#AZBPROMO {
+  width: 90vw;
+  height: auto;
+  display: block;
+  position: relative;
+  border-style: double;
+  border-color: #fbc320;
+  border-width:5px;
+  top: 10vh;
+}
+#MORE-TITLE{
+    width: 100%;
+    margin:0;
+    top: 2vh;
+    left: 4vw;
+}
+#COMING-SOON {
+    width: 100%;
+    position: absolute;
+    top:41vh;
+    left: 47vw;
+    font-family: 'Bebas Neue';
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 10vw; 
+    color: rgb(236, 26, 75);
+    letter-spacing: 1px;
+    transform: scale();
+    z-index: 10;
+}
+#listennowbutton {
+display: flex; /* Switch to flexbox for centering */
+width: 96%;
+font-size: 18px; /* Set a font size as needed */
+font-family: 'Bebas Neue';
+background: linear-gradient(45deg, transparent 5%, #FFDE59 5%);
+color: #ffffff;
+letter-spacing: 1px;
+line-height: 43px; /* Match the button height */
+box-shadow: 14px 0px 0px #f5cdff;
+outline: transparent;
+justify-content: center; /* Center horizontally */
+text-decoration: none;
+height: 50px; /* Set a fixed height or use padding */
+}
+#EPCOVER {
+width: 90vw;
+top: 23.5vh;
+height: auto;
+padding-top: 2.5vh;
+position: absolute;
+} 
+#musicContentContainer {
+top: 72vh;
+left:0;
+text-align: center;
+width: 90vw;
+margin-left:5vw
+}
+#aztecbridesep {
+  display: inline-block;
+  font-size:  10vw;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+#demoparagraph{
+  width: 90vw;
+  font-size: 4vw;
+  text-align: justify;
+  margin-top: 0;
+}
+#live-videos-section {
+height: 40vh;
+}
+#live-videos-section-title{
+padding-top: 5vh;
+font-size: 14vw;
+font-family: 'Bebas Neue';
+font-weight: bolder;
+font-style: oblique;
+color: rgb(236, 26, 75);
+letter-spacing: 1px;
+text-align: center;
+top: 0;
+transform: scale();
+position: center;
+text-decoration: none;
 }
 .carousel {
       padding-top:18px;
