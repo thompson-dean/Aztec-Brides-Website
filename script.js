@@ -87,7 +87,7 @@ const playlist = [
         audio.play();
     }
 
-    // DOM CONTENT LOADED //
+    // PLAY VIDEO ON MOBILE //
 document.addEventListener("DOMContentLoaded", () => {
   const video = document.getElementById("posterloop");
 

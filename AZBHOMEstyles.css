@@ -13,6 +13,7 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #000000; 
+  z-index: 1000;
 }
 .off-screen-menu {
   display: none;
@@ -913,7 +914,7 @@ img {
 
 /*OFF-SCREEN MENU*/
 .off-screen-menu {
-  background-color: rgb(0, 0, 0);
+  background-color: none;
   height: 600px;
   width: 100%;
   position: fixed;
@@ -925,7 +926,7 @@ img {
   text-align: center;
   font-size: 3rem;
   transition: 0.4s ease;
-  z-index: 999;
+  z-index: 1;
   line-height: 70px;
   text-decoration: none;
 }
