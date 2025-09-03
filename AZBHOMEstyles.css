@@ -3,6 +3,10 @@ body {
   background-color: #000000;
   margin: 0;
 }
+@font-face {
+    font-family: josefin;
+    src: url(Fonts/Josefin.ttf);
+}
 header {
   position: fixed;
   top: 0;
@@ -233,6 +237,12 @@ header {
 }
 
 
+.manila-tour-section {
+  border-bottom: 5px solid black;
+}
+
+
+
 #scroll-container {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -296,6 +306,7 @@ display: none;
 #AZBEP {
 scroll-snap-align: start;
 position: relative;
+top: 20px;
 left: 0;
 width: 100vw;
 z-index: 0;
@@ -304,8 +315,8 @@ align-items: center;
 #MORE-TITLE{
 display: block;
 position: absolute;
-top:0;
-left: 3vw;
+top:5vh;
+left: 43vw;
 margin-top: 8vh;
 font-family: 'Bebas Neue';
 font-weight: bolder;
@@ -316,16 +327,16 @@ letter-spacing: 1px;
 transform: scale();
 z-index: 10;
 }
-#COMING-SOON {
+#RELEASE-DATE {
 position: absolute;
 margin-top: 0;
 margin-bottom: 0;
-top:79vh;
-right: 3vw;
+top:35vh;
+left: 42vw;
 font-family: 'Bebas Neue';
 font-weight: bolder;
 font-style: oblique;
-font-size: 10vw; 
+font-size: 4vw; 
 color: rgb(236, 26, 75);
 letter-spacing: 1px;
 transform: scale();
@@ -348,7 +359,7 @@ position: absolute;
 min-width: 50px;
 }
 #EPCOVER:hover {
-opacity: 0.5;
+opacity: 0.9;
 cursor:pointer;
 transform: scale(1.04);
 transition: transform 0.3s ease;;
@@ -396,6 +407,74 @@ left: 100vw;
 z-index:1;
 top: 2vh;
 }
+#LINK-LIST {
+position: relative;
+left: 43vw;
+margin-top: 51vh;
+width: 28vw;
+margin: none; 
+display:grid;
+grid-template-columns: 1fr 1fr;
+gap: 1rem;
+list-style: none;
+top: 0;
+}
+#LINK-LIST i {
+text-decoration: none;
+font-style: normal;
+font-family: 'josefin';
+color:#ffffff;
+}
+.MORE-LINK-BOX {
+position:relative;
+display:flex;
+align-items: center;
+gap: 0.5rem;
+border-bottom: 2px solid transparent rgb(255, 246, 246);
+padding-bottom: 13px;
+padding-top: 13px;
+gap: 1rem;
+}
+.MORE-LINK-BOX::after {
+content: "";
+position: absolute;
+bottom: 0;
+left: 0;
+width: 0%;
+height: 2px;
+background: #FFDE59; /* Change this to your desired color */
+transition: width 0.4s ease;
+}
+.MORE-LINK-BOX:hover::after {
+  width: 75%;
+}
+.link-icon {
+  height: 25px;
+  width: auto;
+}
+
+
+/* LOVE FOR A DAY */
+.LOVE-FOR-A-DAY-MV-SECTION {
+    width: 100%;
+    height: 100vh;                   /* full viewport height */
+    display: flex;                    /* enable flex on parent */
+    justify-content: center;          /* horizontal centering */
+    align-items: center;              /* vertical centering */
+    background-image: url("Images/L4AD_3000x3000.jpg");
+    background-size: 150px 150px;
+    background-position: center;
+    background-repeat: repeat;
+}
+#love-for-a-day-mv {
+    display: flex;
+    width: 50vw;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 /*live videos section*/
 #live-videos-section {
@@ -941,6 +1020,7 @@ img {
   color: #ffffff;
   letter-spacing: 4px;
   line-height: 90px;
+  margin-bottom: 8px;
   box-shadow: 6px 0px 0px #f5cdff;
   position: center absolute;
   display: list-item; /* Use flexbox */
@@ -1080,11 +1160,18 @@ h2 {
 }
 
 
+#love-for-a-day-mv{
+  width: 90vw;
+  height: auto;
+}
+
+
 
 #scroll-container {
+  width: 100vw;
   overflow:hidden;
   white-space: nowrap;
-  height: 165vh;
+  height: 100vh;
 }
 #scrollArrow {
   display: none;
@@ -1095,7 +1182,7 @@ height: 185vh;
 }
 #AZBMORE {
   width: 100vw;
-  display: inline-block;
+  display: none;
   vertical-align: top;
   left: 0;
   margin-top: 22vh;
@@ -1112,12 +1199,14 @@ height: 185vh;
   top: 10vh;
 }
 #MORE-TITLE{
+    display: none;
     width: 100%;
     margin:0;
     top: 2vh;
     left: 4vw;
 }
-#COMING-SOON {
+#RELEASE-DATE {
+    display: none;
     width: 100%;
     position: absolute;
     top:41vh;
@@ -1148,11 +1237,32 @@ height: 50px; /* Set a fixed height or use padding */
 }
 #EPCOVER {
 width: 90vw;
-top: 23.5vh;
+top: 0;
 height: auto;
-padding-top: 2.5vh;
+padding-top: none;
 position: absolute;
 } 
+#LINK-LIST {
+display: grid;
+grid-template-columns: 1fr 1fr; /* 2 equal columns */
+gap: 1rem;                     /* spacing between items */
+justify-items: center;          /* center items in each column */
+width: 100%;                    /* take full width of parent */
+left: 0;
+top: 15px;
+}
+.MORE-LINKS-SECTION {
+width: 90vw;          /* full width with some margin */
+margin: 0 auto;       /* center horizontally */
+display: block;       /* block is fine here */
+}
+.MORE-LINK-BOX {
+width: 100%;                    /* let box fill the grid cell */
+display: flex;                  /* align icon + text */
+align-items: center;
+justify-content: center;
+gap: 0.5rem;                    /* spacing between icon and text */
+}
 #musicContentContainer {
 top: 72vh;
 left:0;
@@ -1177,7 +1287,7 @@ height: 40vh;
 }
 #live-videos-section-title{
 padding-top: 5vh;
-font-size: 14vw;
+font-size: 12vw;
 font-family: 'Bebas Neue';
 font-weight: bolder;
 font-style: oblique;
