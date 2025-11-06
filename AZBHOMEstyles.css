@@ -1057,7 +1057,6 @@ img {
   list-style: none;
 }
 .sub-menu:active{
-  display: list-item;
   width: 75vw;
   font-family: 'Bebas Neue';
   font-style: oblique;
