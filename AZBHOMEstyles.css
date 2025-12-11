@@ -177,6 +177,8 @@ header {
   }
 }
 
+
+/* Poster Loop & GIGS */
 #posterloopcontainer {
   position: relative;
   width: 100%;
@@ -237,8 +239,16 @@ header {
 }
 
 
+/* EDO WAVE*/
 .poster-section {
   border-bottom: 5px solid black;
+  text-align: center;
+}
+
+.poster-section p {
+  margin: 0;
+  color: #d8b6e7;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 
