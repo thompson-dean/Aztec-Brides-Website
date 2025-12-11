@@ -429,7 +429,7 @@ gap: 1rem;
 list-style: none;
 top: 0;
 }
-#LINK-LIST i {
+#LINK-LIST a {
 text-decoration: none;
 font-style: normal;
 font-family: 'josefin';
