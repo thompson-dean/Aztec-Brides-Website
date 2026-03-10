@@ -66,7 +66,7 @@ const playlist = [
     let audio = new Audio();
     let isPlaying = false;
     let currentTrackIndex = 0;
-    audio.volume = matchMedia;
+    audio.volume = 0.75;
 
     audio.addEventListener('ended', playRandomTrack);
 
