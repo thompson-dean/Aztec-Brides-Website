@@ -217,13 +217,7 @@ header {
   font-family: 'Courier New', Courier, monospace;
 }
 
-#scroll-container {
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  width: 100vw;
-  height: 100vh;
-}
+
 #musicSection {
   display: flex;
   width: 200vw;
@@ -756,154 +750,10 @@ img {
     width: 100%;
   }
 
-  #nav-bar ul {
-    display: none;
-    overflow: hidden;
+  #scrollContainer {
+   scroll-margin-top: 200px;
   }
-
-  /* OFF-SCREEN MENU */
-  .off-screen-menu {
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: -100vh;
-    display: block;
-    text-align: center;
-    transition: 0.6s ease;
-    z-index: 999;
-    padding: 10px 0;
-  }
-
-  .off-screen-menu.active {
-    top: 60px;
-  }
-
-  .menu-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .menu-list > li {
-    width: 75vw;
-    font-family: 'Bebas Neue';
-    font-style: oblique;
-    font-size: 2rem;
-    background: linear-gradient(45deg, transparent 5%, #FFDE59 5%);
-    color: #ffffff;
-    letter-spacing: 4px;
-    line-height: 60px;
-    margin: 0 auto 10px auto;
-    box-shadow: 6px 0px 0px #f5cdff;
-    list-style: none;
-  }
-
-  .menu-list > li.has-sub-menu {
-    background: none;
-    box-shadow: none;
-    line-height: normal;
-    padding: 0;
-    margin-bottom: 10px;
-  }
-
-  .sub-menu-toggle {
-    display: block;
-    width: 75vw;
-    margin: 0 auto;
-    background: linear-gradient(45deg, transparent 5%, #FFDE59 5%);
-    box-shadow: 6px 0px 0px #f5cdff;
-    letter-spacing: 4px;
-    line-height: 60px;
-    font-family: 'Bebas Neue';
-    font-style: oblique;
-    font-size: 2rem;
-    color: #ffffff;
-    text-decoration: none;
-    box-sizing: border-box;
-  }
-
-  .menu-list a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  /* SUB-MENU */
-  .sub-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.6s ease, padding 0.6s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
-  }
-
-  .sub-menu.active {
-    max-height: 500px;
-    padding: 6px 0;
-  }
-
-  .sub-menu li {
-    width: 60vw;
-    font-family: 'Bebas Neue';
-    font-style: oblique;
-    background: linear-gradient(45deg, transparent 5%, #f5cdff 5%);
-    color: #ffffff;
-    letter-spacing: 2px;
-    line-height: 45px;
-    box-shadow: 3px 0px 0px #FFDE59;
-    list-style: none;
-    font-size: 1.5rem;
-    margin: 3px;
-  }
-
-  /* HAM MENU */
-  .ham-menu {
-    height: 25px;
-    width: 25px;
-    top: 14px;
-    position: fixed;
-    margin: auto;
-    z-index: 1002;
-    cursor: pointer;
-    display: block;
-  }
-
-  .ham-menu span {
-    height: 3px;
-    width: 25px;
-    margin: 0;
-    background-color: #FFDE59;
-    border-radius: 25px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: .2s ease;
-    display: block;
-  }
-
-  .ham-menu span:nth-child(1) { top: 25%; }
-  .ham-menu span:nth-child(2) { top: 50%; }
-  .ham-menu span:nth-child(3) { top: 75%; }
-  .ham-menu span:nth-child(4) { top: 25%; }
-
-  .ham-menu.active span:nth-child(2) {
-    transform: translate(-50%, 50%) rotate(-40deg);
-    width: 29px;
-    top: 34%;
-  }
-
-  .ham-menu.active span:nth-child(4) {
-    transform: translate(-50%, 50%) rotate(40deg);
-    width: 29px;
-    top: 10%;
-  }
-
+  
   /* CLICKABLE AREAS FOR MOBILE VIEW */
   #tooltip-area1 {
     position: absolute;
@@ -969,6 +819,7 @@ img {
     overflow: hidden;
     white-space: nowrap;
     height: 100vh;
+    scroll-margin-top: 100px;
   }
   #scrollArrow {
     display: none;
@@ -1044,7 +895,7 @@ img {
     justify-items: center;
     width: 100%;
     left: 0;
-    top: 15px;
+    top: 20px;
   }
   .MORE-LINKS-SECTION {
     width: 90vw;

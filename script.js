@@ -41,6 +41,19 @@ document.addEventListener('click', (e) => {
   }
 });
 
+// Close menu when any link is clicked
+const menuLinks = document.querySelectorAll('.menu-list a:not(.sub-menu-toggle)');
+
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    hamMenu.classList.remove('active');
+    offScreenMenu.classList.remove('active');
+    subMenuToggles.forEach(toggle => {
+      toggle.nextElementSibling.classList.remove('active');
+    });
+  });
+});
+
 // BACKGROUND MUSIC - HOME
 const playlist = [
   "Songs/Lie.mp3",
