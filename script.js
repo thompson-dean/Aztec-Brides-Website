@@ -87,16 +87,3 @@ const playlist = [
         audio.play();
     }
 
-    // PLAY VIDEO ON MOBILE //
-document.addEventListener("DOMContentLoaded", () => {
-  const video = document.getElementById("posterloop");
-
-  // Check if the user is on a mobile device
-  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-  if (isMobile) {
-    video.muted = true; // Keep muted on mobile
-  } else {
-    video.muted = false; // Play with sound on desktop
-  }
-}); 
