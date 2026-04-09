@@ -742,8 +742,17 @@ img {
     top: 0;
   }
 
+  #posterloopcontainer {
+    height: 100svh;
+    overflow: hidden;
+  }
+
   #posterloop {
     padding-top: 50px;
+    width: 100%;
+    height: calc(100svh - 50px);
+    object-fit: cover;
+    object-position: top center;
   }
 
   .homeimages {
@@ -791,16 +800,23 @@ img {
   #gigsHomepageContainer {
     width: 100vw;
     position: absolute;
-    top: 91.5vw;
+    top: 72vh;
     left: 0;
     display: block;
   }
+  #gigsHomepageTitle {
+    font-size: 5vh;
+  }
+  #gigsHomepageTitleH {
+    font-size: 5vh;
+    margin: 0;
+  }
   .gigsHomepageListparagraphlink {
-    font-size: 4vw;
+    font-size: 3vh;
   }
   #gigsHomepageList {
     width: 100vw;
-    top: 17vw;
+    top: 7vh;
     position: absolute;
     display: block;
   }
