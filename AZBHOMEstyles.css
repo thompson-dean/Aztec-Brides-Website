@@ -160,6 +160,7 @@ header {
 }
 #gigsHomepageContainer {
   width: 100vw;
+  height: max-content;
   position: absolute;
   top: 76vw;
   left: 0;
@@ -801,7 +802,7 @@ img {
   #gigsHomepageContainer {
     width: 100vw;
     position: absolute;
-    top: 68svh;
+    top: 71svh;
     left: 0;
     display: block;
   }
