@@ -7,6 +7,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AZTEC BRIDES - HOME</title>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.149.0/examples/jsm/"
+    }
+  }
+  </script>
 </head>
 
 <body>
@@ -99,7 +107,21 @@
       <div id="scrollArrow">➜</div>
       <div id="AZBEP">
         <a href="https://share.amuse.io/album/aztec-brides-more" id="musicLink" target="_blank">
-          <img id="EPCOVER" src="Images/homepage_AZBMORE!.png" alt="Aztec Brides 'MORE!' Cover">
+          <div id="EPCOVER-wrap">
+            <img id="EPCOVER" src="Images/homepage_AZBMORE!.png" alt="Aztec Brides 'MORE!' Cover">
+            <canvas class="head-canvas" id="head-joe"
+              data-glb="Images/HEADS/Joe_Head.glb"
+              data-rot-x="0" data-rot-y="0" data-rot-z="0"></canvas>
+            <canvas class="head-canvas" id="head-yuri"
+              data-glb="Images/HEADS/Yuri_Head.glb"
+              data-rot-x="0" data-rot-y="0" data-rot-z="0"></canvas>
+            <canvas class="head-canvas" id="head-dean"
+              data-glb="Images/HEADS/Dean_Head.glb"
+              data-rot-x="0" data-rot-y="0" data-rot-z="0"></canvas>
+            <canvas class="head-canvas" id="head-beto"
+              data-glb="Images/HEADS/Beto_Head.glb"
+              data-rot-x="0" data-rot-y="0" data-rot-z="0"></canvas>
+          </div>
         </a>
 
         <h2 id="MORE-TITLE">MORE!</h2>
@@ -202,5 +224,6 @@
 
 <!--SCRIPT-->
 <script src="script.js"></script>
+<script type="module" src="heads.js"></script>
 </body>
 </html>
