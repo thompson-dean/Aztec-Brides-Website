@@ -346,9 +346,9 @@ header {
   z-index: 1;
 }
 #head-joe   { left:  0%; width: 31%; }
-#head-yuri  { left: 17%; width: 31%; z-index: 2; }
-#head-dean  { left: 35%; width: 31%; }
-#head-beto  { left: 53%; width: 40%; }
+#head-yuri  { left: 19%; width: 33%; z-index: 2; }
+#head-dean  { left: 45%; width: 31%; }
+#head-beto  { left: 64%; width: 40%; z-index: 0}
 #musicContentContainer {
   position: absolute;
   top: 9vh;

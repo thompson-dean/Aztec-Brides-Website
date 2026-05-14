@@ -2,15 +2,13 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
 
-const MAX_Y = THREE.MathUtils.degToRad(32);
-const MAX_X = THREE.MathUtils.degToRad(20);
-
-let targetRotX = 0;
-let targetRotY = 0;
+// Track raw mouse position — each head computes its own aim angle per frame
+let mouseX = window.innerWidth  / 2;
+let mouseY = window.innerHeight / 2;
 
 document.addEventListener('mousemove', (e) => {
-  targetRotY =  (e.clientX / window.innerWidth  - 0.5) * 2 * MAX_Y;
-  targetRotX =  (e.clientY / window.innerHeight - 0.5) * 2 * MAX_X;
+  mouseX = e.clientX;
+  mouseY = e.clientY;
 });
 
 const dracoLoader = new DRACOLoader();
@@ -28,9 +26,11 @@ document.querySelectorAll('.head-canvas').forEach((canvas) => {
   const baseRotX = DEG(parseFloat(canvas.dataset.rotX || 0));  // pitch  (+ = tilt forward, - = tilt back)
   const baseRotY = DEG(parseFloat(canvas.dataset.rotY || 0));  // yaw    (+ = turn right,   - = turn left)
   const baseRotZ = DEG(parseFloat(canvas.dataset.rotZ || 0));  // roll   (+ = tilt left,    - = tilt right)
+  const scale    = parseFloat(canvas.dataset.scale   || 1);    // size   (1 = default, 1.5 = 50% bigger, 0.7 = smaller)
 
   let renderer, scene, camera, headGroup;
   let currentRotX = 0, currentRotY = 0;
+  let targetRotX  = 0, targetRotY  = 0;
   const clock = new THREE.Clock();
 
   try {
@@ -65,7 +65,7 @@ document.querySelectorAll('.head-canvas').forEach((canvas) => {
       const box    = new THREE.Box3().setFromObject(model);
       const centre = box.getCenter(new THREE.Vector3());
       const size   = box.getSize(new THREE.Vector3());
-      const sc     = 0.8 / Math.max(size.x, size.y, size.z);
+      const sc     = (0.8 * scale) / Math.max(size.x, size.y, size.z);
       model.scale.setScalar(sc);
       model.position.sub(centre.multiplyScalar(sc));
       headGroup.add(model);
@@ -87,6 +87,16 @@ document.querySelectorAll('.head-canvas').forEach((canvas) => {
     (function animate() {
       requestAnimationFrame(animate);
       const t = clock.getElapsedTime();
+
+      // Compute the angle from this canvas center to the mouse each frame
+      const rect  = canvas.getBoundingClientRect();
+      const cx    = rect.left + rect.width  / 2;
+      const cy    = rect.top  + rect.height / 2;
+      // focal: conceptual depth — larger = less sensitive, tweak to taste
+      const focal = window.innerHeight * 0.9;
+      targetRotY  =  Math.atan2(mouseX - cx, focal);
+      targetRotX  =  Math.atan2(mouseY - cy, focal);
+
       currentRotX += (targetRotX - currentRotX) * 0.06;
       currentRotY += (targetRotY - currentRotY) * 0.06;
       headGroup.rotation.x = baseRotX + currentRotX + Math.sin(t * 0.3) * 0.004;
