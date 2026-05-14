@@ -318,20 +318,37 @@ header {
   margin-right: auto;
   padding: 0;
 }
-#EPCOVER {
+#EPCOVER-wrap {
   width: 33vw;
-  height: auto;
+  min-width: 50px;
   top: 17vh;
   left: 5vw;
   position: absolute;
-  min-width: 50px;
+  display: block;
+  line-height: 0;
 }
-#EPCOVER:hover {
+#EPCOVER-wrap:hover #EPCOVER {
   opacity: 0.9;
-  cursor: pointer;
   transform: scale(1.04);
   transition: transform 0.3s ease;
-} 
+}
+#EPCOVER {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+.head-canvas {
+  position: absolute;
+  pointer-events: none;
+  top: 25%;
+  height: 49%;
+  z-index: 1;
+}
+#head-joe   { left:  0%; width: 31%; }
+#head-yuri  { left: 17%; width: 31%; z-index: 2; }
+#head-dean  { left: 35%; width: 31%; }
+#head-beto  { left: 53%; width: 40%; }
 #musicContentContainer {
   position: absolute;
   top: 9vh;
@@ -900,11 +917,15 @@ img {
     text-decoration: none;
     height: 50px;
   }
-  #EPCOVER {
+  #EPCOVER-wrap {
     width: 90vw;
     top: 0;
-    height: auto;
     position: absolute;
+  }
+  #EPCOVER {
+    width: 100%;
+    height: auto;
+    position: static;
   }
   #LINK-LIST {
     display: grid;
