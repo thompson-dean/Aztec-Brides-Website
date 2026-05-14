@@ -1,6 +1,6 @@
 // ARROW SCRIPT
 const scrollArrow = document.getElementById("scrollArrow");
-const scrollContainer = document.getElementById("scroll-container");
+const scrollContainer = document.getElementById("music");
 
 if (scrollArrow && scrollContainer) {
   scrollArrow.addEventListener("click", () => {
