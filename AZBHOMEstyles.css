@@ -318,25 +318,32 @@ header {
   margin-right: auto;
   padding: 0;
 }
-#EPCOVER-wrap {
-  width: 33vw;
-  min-width: 50px;
+#musicLink {
+  display: block;
+  position: absolute;
   top: 17vh;
   left: 5vw;
-  position: absolute;
+  width: 33vw;
+  min-width: 50px;
+  line-height: 0;
+  z-index: 1;
+}
+#EPCOVER-wrap {
+  position: relative;
+  width: 100%;
   display: block;
   line-height: 0;
 }
-#EPCOVER-wrap:hover #EPCOVER {
+#musicLink:hover #EPCOVER {
   opacity: 0.9;
   transform: scale(1.04);
-  transition: transform 0.3s ease;
 }
 #EPCOVER {
   width: 100%;
   height: auto;
   display: block;
   cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 .head-canvas {
   position: absolute;
@@ -917,10 +924,10 @@ img {
     text-decoration: none;
     height: 50px;
   }
-  #EPCOVER-wrap {
+  #musicLink {
     width: 90vw;
     top: 0;
-    position: absolute;
+    left: 0;
   }
   #EPCOVER {
     width: 100%;
