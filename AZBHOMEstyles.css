@@ -747,7 +747,7 @@ img {
 
 
 /* MOBILE VIEW */
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 768px), screen and (max-height: 500px) and (orientation: landscape) {
 
   body {
     width: 100%;
@@ -777,8 +777,8 @@ img {
     padding-top: 60px;
     width: 100%;
     height: calc(100svh - 60px);
-    object-fit: cover;
-    object-position: top center;
+    object-fit: contain;
+    object-position: center top;
   }
 
   .homeimages {
@@ -927,7 +927,7 @@ img {
   #musicLink {
     width: 90vw;
     top: 0;
-    left: 0;
+    left: 5vw;
   }
   #EPCOVER {
     width: 100%;
@@ -990,15 +990,17 @@ img {
     text-decoration: none;
   }
   .carousel {
-    padding-top: 18px;
+    padding: 18px 12vw 60px;
+    gap: 4vw;
+    scroll-padding-inline: 12vw;
   }
   .slide {
-    flex: 0 0 75vw;
+    flex: 0 0 76vw;
     scroll-snap-align: center;
     border-radius: 12px;
     overflow: hidden;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 0;
+    padding-right: 0;
   }
   iframe {
     width: 100%;
@@ -1007,5 +1009,18 @@ img {
   }
   #madeintokyo {
     bottom: 5vh;
+  }
+}
+
+/* MOBILE LANDSCAPE (short, wide phone screens) */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  #musicLink {
+    width: 40vh;
+    left: 50%;
+    top: 8px;
+    transform: translateX(-50%);
+  }
+  #love-for-a-day-mv {
+    width: min(90vw, 120vh);
   }
 }
