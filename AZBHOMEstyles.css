@@ -779,6 +779,8 @@ img {
     height: calc(100svh - 60px);
     object-fit: contain;
     object-position: center top;
+    transform: scale(1.2);
+    transform-origin: 64% 60px;
   }
 
   .homeimages {
@@ -826,7 +828,7 @@ img {
   #gigs {
     width: 100vw;
     position: absolute;
-    top: 71svh;
+    top: calc(60px + 98.5vw);
     left: 0;
     display: block;
   }
@@ -851,6 +853,10 @@ img {
   }
 
   /* LOVE FOR A DAY MV */
+  .LOVE-FOR-A-DAY-MV-SECTION {
+    height: auto;
+    padding: 8vh 0;
+  }
   #love-for-a-day-mv {
     width: 90vw;
     height: auto;
@@ -975,10 +981,10 @@ img {
     margin-top: 0;
   }
   #live-videos-section {
-    height: 40vh;
+    min-height: 32vh;
   }
   #live-videos-section-title {
-    padding-top: 5vh;
+    padding-top: 3vh;
     font-size: 12vw;
     font-family: 'Bebas Neue';
     font-weight: bolder;
@@ -990,7 +996,7 @@ img {
     text-decoration: none;
   }
   .carousel {
-    padding: 18px 12vw 60px;
+    padding: 18px 12vw 40px;
     gap: 4vw;
     scroll-padding-inline: 12vw;
   }
