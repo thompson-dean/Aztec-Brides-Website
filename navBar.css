@@ -125,7 +125,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    transition: .25s ease;
+    transition: .2s ease;
     display: block;
   }
   .ham-menu span:nth-child(1) { top: 4px; }
@@ -133,19 +133,15 @@
   .ham-menu span:nth-child(3) { top: 18px; }
   .ham-menu span:nth-child(4) { top: 11px; }
 
-  .ham-menu.active span:nth-child(1),
-  .ham-menu.active span:nth-child(3) {
-    opacity: 0;
-  }
   .ham-menu.active span:nth-child(2) {
     top: 11px;
-    transform: translateX(-50%) rotate(45deg);
-    width: 30px;
+    transform: translateX(-50%) rotate(-40deg);
+    width: 29px;
   }
   .ham-menu.active span:nth-child(4) {
     top: 11px;
-    transform: translateX(-50%) rotate(-45deg);
-    width: 30px;
+    transform: translateX(-50%) rotate(40deg);
+    width: 29px;
   }
 
 }
