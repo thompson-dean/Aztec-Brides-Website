@@ -352,10 +352,10 @@ header {
   height: 49%;
   z-index: 1;
 }
-#head-joe   { left:  0%; width: 31%; }
-#head-yuri  { left: 19%; width: 33%; z-index: 2; }
-#head-dean  { left: 45%; width: 31%; }
-#head-beto  { left: 64%; width: 40%; z-index: 0}
+#head-joe   { left:  1%; width: 31%; }
+#head-yuri  { left: 19%; width: 32%; z-index: 2; }
+#head-dean  { left: 43%; width: 31%; }
+#head-beto  { left: 61%; width: 38%; z-index: 0}
 #musicContentContainer {
   position: absolute;
   top: 9vh;
@@ -779,8 +779,8 @@ img {
     height: calc(100svh - 60px);
     object-fit: contain;
     object-position: center top;
-    transform: scale(1.2);
-    transform-origin: 64% 60px;
+    transform: translateX(-3%) scale(1.21);
+    transform-origin: 50% 60px;
   }
 
   .homeimages {
@@ -828,7 +828,7 @@ img {
   #gigs {
     width: 100vw;
     position: absolute;
-    top: calc(60px + 98.5vw);
+    top: calc(60px + 100vw);
     left: 0;
     display: block;
   }
@@ -840,13 +840,16 @@ img {
     margin: 0;
   }
   .gigsHomepageListparagraphlink {
-    font-size: 3svh;
+    font-size: 2.5svh;
   }
   #gigsHomepageList {
     width: 100vw;
-    top: 7svh;
+    top: 6svh;
     position: absolute;
     display: block;
+  }
+  #gigsHomepageList p {
+    margin: 0.5rem 0;
   }
   h2 {
     display: none;
@@ -866,7 +869,7 @@ img {
     width: 100vw;
     overflow: hidden;
     white-space: nowrap;
-    height: 100vh;
+    height: calc(51vh + 300px);
     scroll-margin-top: 100px;
   }
   #scrollArrow {
@@ -981,6 +984,7 @@ img {
     margin-top: 0;
   }
   #live-videos-section {
+    height: auto;
     min-height: 32vh;
   }
   #live-videos-section-title {
@@ -996,12 +1000,12 @@ img {
     text-decoration: none;
   }
   .carousel {
-    padding: 18px 12vw 40px;
-    gap: 4vw;
-    scroll-padding-inline: 12vw;
+    padding: 18px 15vw 40px;
+    gap: 3vw;
+    scroll-padding-inline: 15vw;
   }
   .slide {
-    flex: 0 0 76vw;
+    flex: 0 0 70vw;
     scroll-snap-align: center;
     border-radius: 12px;
     overflow: hidden;
