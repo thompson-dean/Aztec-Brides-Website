@@ -188,6 +188,9 @@ header {
   text-align: center;
   text-decoration: none;
 }
+#gigsHomepageList {
+  margin-top: 3vw;
+}
 .gigsHomepageListparagraphlink:hover {
   color: rgb(236, 26, 75);
 }
@@ -844,7 +847,8 @@ img {
   }
   #gigsHomepageList {
     width: 100vw;
-    top: 5svh;
+    top: 9svh;
+    margin-top: 0;
     position: absolute;
     display: block;
   }
@@ -1024,6 +1028,32 @@ img {
 
 /* MOBILE LANDSCAPE (short, wide phone screens) */
 @media screen and (max-height: 500px) and (orientation: landscape) {
+  /* Poster loop: fill the full screen width instead of being boxed to the
+     short landscape height (the video is portrait, so it scrolls like desktop) */
+  #posterloopcontainer {
+    height: auto;
+  }
+  #posterloop {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transform: none;
+  }
+  #gigs {
+    top: calc(60px + 84vw);
+  }
+  #gigsHomepageTitle,
+  #gigsHomepageTitleH {
+    font-size: 5vw;
+  }
+  .gigsHomepageListparagraphlink {
+    font-size: 2.6vw;
+  }
+  #gigsHomepageList {
+    top: 10vw;
+  }
+
   #musicLink {
     width: 40vh;
     left: 50%;
